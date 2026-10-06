@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  ctfd:
+    image: ctfd/ctfd:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - uninvited_net
+    restart: always
+
+  juice-shop:
+    image: bkimminich/juice-shop:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - uninvited_net
+    volumes:
+      - ./platform/users.yml:/juice-shop/data/static/users.yml
+    restart: always
+
+  exchange-portal:
+    build: ./platform/exchange-portal
+    ports:
+      - "8086:8086"
+    networks:
+      - uninvited_net
+    restart: always
+
+networks:
+  uninvited_net:
+    driver: bridge
