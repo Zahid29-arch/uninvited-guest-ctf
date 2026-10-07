@@ -17,6 +17,9 @@ services:
       - uninvited_net
     volumes:
       - ./platform/users.yml:/juice-shop/data/static/users.yml
+      - ./platform/juice-shop-server.js:/juice-shop/build/server.js
+      - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/ftp/evidence_photos.zip
+      - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/frontend/dist/frontend/assets/public/evidence_photos.zip
     restart: always
 
   exchange-portal:

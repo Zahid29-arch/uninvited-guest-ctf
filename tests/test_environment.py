@@ -29,6 +29,21 @@ class TestCTFEnvironment(unittest.TestCase):
         self.assertEqual(resp.status_code, 200, 'Failed to authenticate seeded target on Juice Shop')
         self.assertIn('token', resp.json().get('authentication', {}), 'JWT token missing from login response')
 
+    def test_juice_shop_admin_evidence_vault(self):
+        """Verify that evidence_photos.zip is restricted to Admin on Juice Shop."""
+        # Unauthenticated request must fail with 401
+        r_unauth = requests.get('http://localhost:3000/rest/admin/evidence_photos.zip', timeout=5)
+        self.assertEqual(r_unauth.status_code, 401, 'Unauthenticated request was not blocked with 401')
+
+        # Admin request must succeed with 200 and return zip bytes
+        login_url = 'http://localhost:3000/rest/user/login'
+        r_login = requests.post(login_url, json={'email': "adrian.kessler@uninvited.local'--", 'password': 'test'}, timeout=5)
+        token = r_login.json()['authentication']['token']
+        headers = {'Authorization': f'Bearer {token}'}
+        r_admin = requests.get('http://localhost:3000/rest/admin/evidence_photos.zip', headers=headers, timeout=5)
+        self.assertEqual(r_admin.status_code, 200, 'Admin request failed to download evidence archive')
+        self.assertGreater(len(r_admin.content), 500, 'Evidence archive appears corrupted or truncated')
+
     def test_exchange_portal_up(self):
         """Verify The Exchange Portal is reachable on port 8086."""
         resp = requests.get('http://localhost:8086', timeout=5)

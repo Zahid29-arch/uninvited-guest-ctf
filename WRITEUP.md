@@ -50,19 +50,13 @@ Identify the target's username on the corporate e-commerce system (OWASP Juice S
 - OWASP Juice Shop: `http://localhost:3000`
 
 ### Walkthrough
-1. Open the Juice Shop application in a web browser.
-2. In Stage 1, we learned the target's email address is `adrian.kessler@uninvited.local`.
-3. Query the user profile or perform a login at `http://localhost:3000/rest/user/login`.
-4. Inspecting the JSON response or the profile page returns:
-   ```json
-   {
-     "authentication": {
-       "token": "...",
-       "umail": "adrian.kessler@uninvited.local"
-     }
-   }
-   ```
-5. The username prefix on the platform is `adrian.kessler`.
+1. Open OWASP Juice Shop in a web browser at `http://localhost:3000/#/login`.
+2. In Stage 1, we recovered the target's email: `adrian.kessler@uninvited.local`.
+3. To breach his account without knowing his password, leverage Juice Shop's **SQL Injection (Authentication Bypass)** vulnerability:
+   - **Email**: `adrian.kessler@uninvited.local'--`
+   - **Password**: (any character, e.g. `test`)
+4. The application skips the password check and logs you into Adrian Kessler's administrator account!
+5. Inspecting the authenticated session reveals the target's web username: `adrian.kessler`.
 
 ### Flag
 - **Standard**: `adrian.kessler`
@@ -73,25 +67,30 @@ Identify the target's username on the corporate e-commerce system (OWASP Juice S
 ## 🔐 Stage 3: Crypto - Classified Vault
 
 ### Objective
-Recover the target's master password by cracking an encrypted evidence archive recovered from his workstation.
+Download the classified forensic archive restricted to Administrator clearance on Juice Shop, and crack it to recover Adrian Kessler's master password.
 
-### Provided Artifacts
-- `stages/stage3_crypto/evidence_photos.zip`
-- `stages/stage3_crypto/wordlist.txt`
+### Provided Artifacts & Service
+- Service: OWASP Juice Shop `http://localhost:3000`
+- Wordlist: `stages/stage3_crypto/wordlist.txt`
 
 ### Walkthrough
-1. Attempting to extract `evidence_photos.zip` prompts for a password.
-2. Perform a dictionary attack against the zip archive using the provided `wordlist.txt`:
+1. As demonstrated in the target's profile notes, Adrian Kessler stores his incident archive in the internal evidence vault.
+2. Attempting to download `http://localhost:3000/rest/admin/evidence_photos.zip` without administrator credentials returns **HTTP 401 Unauthorized** (or **403 Forbidden** for non-admin accounts).
+3. Using the Administrator session token obtained in Stage 2 (or by navigating to `http://localhost:3000/rest/admin/evidence-vault?token=<JWT>`), download `evidence_photos.zip`:
    ```bash
-   # Using Python:
+   python solvers/stage3_solver.py
+   ```
+4. Perform a dictionary attack against the downloaded archive using the provided `wordlist.txt`:
+   ```bash
+   # Cracking using Python:
    python solvers/stage3_solver.py
 
    # Or using zip2john / John the Ripper:
    zip2john evidence_photos.zip > zip.hash
    john --wordlist=wordlist.txt zip.hash
    ```
-3. The password `Kessler123!` unlocks the archive.
-4. Extracting the archive reveals `case_notes.txt` confirming Adrian Kessler's credentials and `flag.txt`.
+5. The password `Kessler123!` unlocks the archive.
+6. Extracting the archive reveals `case_notes.txt` confirming Adrian Kessler's credentials and `flag.txt`.
 
 ### Flag
 - **Standard**: `Kessler123!`
