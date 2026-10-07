@@ -1,1 +1,163 @@
-<html><body><p>Welcome to my tech blog. - UninvitedGuest99 (Adrian Kessler)</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About :: Notes from the Perimeter</title>
+    <style>
+        :root {
+            --bg-body: #fafafa;
+            --bg-card: #ffffff;
+            --text-main: #24292f;
+            --text-sub: #57606a;
+            --primary: #0969da;
+            --border: #d0d7de;
+            --quote-bg: #f6f8fa;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+        .blog-container {
+            max-width: 740px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 48px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .site-title { font-size: 1.6rem; font-weight: 800; color: #1f2328; margin-bottom: 6px; letter-spacing: -0.5px; }
+        .site-subtitle { color: var(--text-sub); font-size: 0.95rem; }
+        nav { margin-top: 16px; }
+        nav a {
+            color: var(--text-sub);
+            text-decoration: none;
+            margin-right: 18px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        nav a:hover, nav a.active { color: var(--primary); font-weight: 600; }
+        h1 { font-size: 2rem; color: #1f2328; margin-bottom: 16px; letter-spacing: -0.5px; }
+        h2 { font-size: 1.25rem; color: #1f2328; margin: 28px 0 12px; border-bottom: 1px solid #eaeef2; padding-bottom: 6px; }
+        p { margin-bottom: 16px; font-size: 1.05rem; }
+        .highlight-box {
+            background: var(--quote-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 1rem;
+        }
+        .quote {
+            font-style: italic;
+            font-weight: 500;
+            color: #1f2328;
+            margin-bottom: 8px;
+        }
+        ul { margin-left: 24px; margin-bottom: 20px; font-size: 1rem; }
+        li { margin-bottom: 8px; }
+        .contact-card {
+            background: #f6f8fa;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+        .contact-item { margin-bottom: 10px; font-size: 0.95rem; }
+        .contact-item strong { display: inline-block; width: 140px; color: var(--text-sub); }
+        .contact-item code {
+            background: #eaeef2;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #cf222e;
+        }
+        footer {
+            margin-top: 48px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <header>
+            <div class="site-title">Notes from the Perimeter</div>
+            <div class="site-subtitle">Thoughts on Systems Engineering, Defense, and Container Security</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">Projects</a>
+                <a href="#" class="active">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>About Adrian Kessler</h1>
+            
+            <p>
+                Welcome to my personal tech notebook. My name is <strong>Adrian Kessler</strong>. 
+                I work as a Senior Infrastructure Engineer and Application Architect, primarily building 
+                hardened internal environments and defensive training platforms.
+            </p>
+
+            <div class="highlight-box">
+                <div class="quote">"Building resilient walls for the uninvited."</div>
+                <div style="font-size: 0.85rem; color: var(--text-sub);">— Personal motto & digital signature</div>
+            </div>
+
+            <h2>Online Identity & Work</h2>
+            <p>
+                In community forums, GitHub, and research circles, I am known under the pseudonym 
+                <strong>k3ss_void</strong>. Most of my public write-ups and tools are signed with this handle.
+            </p>
+            <p>
+                Currently, I oversee deployment architectures for the <em>Uninvited</em> project stack, 
+                coordinating core services such as CTFd scoring instances, vulnerable sandbox nodes (like Juice Shop), 
+                and custom transactional portals.
+            </p>
+
+            <h2>Verified Directory & Contact Details</h2>
+            <p>
+                For official communications and team coordination, please refer to my corporate routing info:
+            </p>
+
+            <div class="contact-card">
+                <div class="contact-item">
+                    <strong>Full Name:</strong> <span>Adrian Kessler</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Community Alias:</strong> <code>k3ss_void</code>
+                </div>
+                <div class="contact-item">
+                    <strong>Primary Email:</strong> <code>adrian.kessler@uninvited.local</code>
+                </div>
+                <div class="contact-item">
+                    <strong>Infrastructure:</strong> <span>uninvited.local (Internal Network Zone)</span>
+                </div>
+                <div class="contact-item">
+                    <strong>PGP Signature:</strong> <span>AK_SEC_41445249</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 Adrian Kessler (k3ss_void). All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

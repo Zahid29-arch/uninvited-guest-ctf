@@ -1,4 +1,30 @@
 -
+  email: adrian.kessler@uninvited.local
+  username: adrian.kessler
+  password: 'Kessler123!'
+  customDomain: true
+  key: adrianKesslerAdmin
+  role: 'admin'
+  securityQuestion:
+    id: 2
+    answer: 'UninvitedSecret2026!'
+  feedback:
+    comment: 'Primary CTF Administrator Account'
+    rating: 5
+  address:
+    - fullName: 'Adrian Kessler'
+      mobileNum: 1234567890
+      zipCode: '1337'
+      streetAddress: '1 Admin Way'
+      city: 'Cyberspace'
+      state: 'Isolated'
+      country: 'CTF'
+  card:
+    - fullName: 'Adrian Kessler'
+      cardNum: 4000123456789010
+      expMonth: 12
+      expYear: 2030
+-
   email: admin
   password: 'Kessler123!'
   key: admin
