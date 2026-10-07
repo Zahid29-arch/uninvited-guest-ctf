@@ -20,6 +20,7 @@ services:
       - ./platform/juice-shop-server.js:/juice-shop/build/server.js
       - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/ftp/evidence_photos.zip
       - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/frontend/dist/frontend/assets/public/evidence_photos.zip
+      - ./platform/juice-shop-index.html:/juice-shop/frontend/dist/frontend/index.html
     restart: always
 
   exchange-portal:
