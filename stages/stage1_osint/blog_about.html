@@ -13,6 +13,7 @@
             --primary: #0969da;
             --border: #d0d7de;
             --quote-bg: #f6f8fa;
+            --card-sub-bg: #fdfdfd;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -23,7 +24,7 @@
             padding: 40px 20px;
         }
         .blog-container {
-            max-width: 740px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -49,7 +50,7 @@
         nav a:hover, nav a.active { color: var(--primary); font-weight: 600; }
         h1 { font-size: 2rem; color: #1f2328; margin-bottom: 16px; letter-spacing: -0.5px; }
         h2 { font-size: 1.25rem; color: #1f2328; margin: 28px 0 12px; border-bottom: 1px solid #eaeef2; padding-bottom: 6px; }
-        p { margin-bottom: 16px; font-size: 1.05rem; }
+        p { margin-bottom: 16px; font-size: 1.02rem; }
         .highlight-box {
             background: var(--quote-bg);
             border-left: 4px solid var(--primary);
@@ -62,26 +63,59 @@
             font-style: italic;
             font-weight: 500;
             color: #1f2328;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
-        ul { margin-left: 24px; margin-bottom: 20px; font-size: 1rem; }
-        li { margin-bottom: 8px; }
-        .contact-card {
-            background: #f6f8fa;
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .team-card {
+            background: var(--card-sub-bg);
             border: 1px solid var(--border);
             border-radius: 6px;
-            padding: 20px;
-            margin-top: 24px;
+            padding: 18px;
         }
-        .contact-item { margin-bottom: 10px; font-size: 0.95rem; }
-        .contact-item strong { display: inline-block; width: 140px; color: var(--text-sub); }
-        .contact-item code {
+        .team-card.featured {
+            border-color: var(--primary);
+            background: #f6faff;
+        }
+        .team-card h3 {
+            font-size: 1.1rem;
+            color: #1f2328;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .team-role {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .team-desc {
+            font-size: 0.92rem;
+            color: #424a53;
+            margin-bottom: 10px;
+        }
+        .team-handle {
+            font-family: monospace;
             background: #eaeef2;
             padding: 2px 6px;
             border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             color: #cf222e;
+        }
+        .policy-banner {
+            background: #fff8c5;
+            border: 1px solid #d4a72c;
+            border-radius: 6px;
+            padding: 16px;
+            margin: 24px 0;
+            font-size: 0.92rem;
+            color: #4d2d00;
         }
         footer {
             margin-top: 48px;
@@ -97,69 +131,114 @@
     <div class="blog-container">
         <header>
             <div class="site-title">Notes from the Perimeter</div>
-            <div class="site-subtitle">Thoughts on Systems Engineering, Defense, and Container Security</div>
+            <div class="site-subtitle">Engineering Notebook &amp; Infrastructure Architecture Journal</div>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Articles</a>
-                <a href="#">Projects</a>
-                <a href="#" class="active">About</a>
+                <a href="#">Architecture</a>
+                <a href="#" class="active">Team &amp; About</a>
             </nav>
         </header>
 
         <main>
-            <h1>About Adrian Kessler</h1>
+            <h1>Engineering Team &amp; Infrastructure</h1>
             
             <p>
-                Welcome to my personal tech notebook. My name is <strong>Adrian Kessler</strong>. 
-                I work as a Senior Infrastructure Engineer and Application Architect, primarily building 
-                hardened internal environments and defensive training platforms.
+                Welcome to <em>Notes from the Perimeter</em>. We are a distributed systems engineering and infrastructure
+                hardening collective. Our primary mission is architecting isolated container sandboxes, zero-trust network boundaries,
+                and defensive testbeds for enterprise platforms.
             </p>
 
             <div class="highlight-box">
                 <div class="quote">"Building resilient walls for the uninvited."</div>
-                <div style="font-size: 0.85rem; color: var(--text-sub);">— Personal motto & digital signature</div>
+                <div style="font-size: 0.85rem; color: var(--text-sub);">— Core architecture motto &amp; digital release signature</div>
             </div>
 
-            <h2>Online Identity & Work</h2>
+            <h2>Meet the Core Engineering Team</h2>
             <p>
-                In community forums, GitHub, and research circles, I am known under the pseudonym 
-                <strong>k3ss_void</strong>. Most of my public write-ups and tools are signed with this handle.
-            </p>
-            <p>
-                Currently, I oversee deployment architectures for the <em>Uninvited</em> project stack, 
-                coordinating core services such as CTFd scoring instances, vulnerable sandbox nodes (like Juice Shop), 
-                and custom transactional portals.
+                Our core platform operations are spearheaded by four principal engineers across security, architecture, and reliability:
             </p>
 
-            <h2>Verified Directory & Contact Details</h2>
-            <p>
-                For official communications and team coordination, please refer to my corporate routing info:
-            </p>
+            <div class="team-grid">
+                <div class="team-card featured">
+                    <h3>
+                        <span>Adrian</span>
+                        <span class="team-handle">k3ss_void</span>
+                    </h3>
+                    <div class="team-role">Lead Architect &amp; Infrastructure Security</div>
+                    <div class="team-desc">
+                        Directs containerized sandbox deployments, custom bridge routing (e.g. <code>uninvited_net</code>), 
+                        and internal administration nodes. Frequent contributor to 0xNull underground reverse engineering forums.
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-sub);">
+                        Digital Sig: <code>AK_SEC_41445249</code> | Status: Active Admin
+                    </div>
+                </div>
 
-            <div class="contact-card">
-                <div class="contact-item">
-                    <strong>Full Name:</strong> <span>Adrian Kessler</span>
+                <div class="team-card">
+                    <h3>
+                        <span>Elena Rostova</span>
+                        <span class="team-handle">el_rost</span>
+                    </h3>
+                    <div class="team-role">Senior Application Security Engineer</div>
+                    <div class="team-desc">
+                        Specializes in API gateway authentication, OAuth policy enforcement, and inspecting web application
+                        reverse proxy traffic across edge boundaries.
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-sub);">
+                        Status: Active Contributor
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <strong>Community Alias:</strong> <code>k3ss_void</code>
+
+                <div class="team-card">
+                    <h3>
+                        <span>Marcus Vance</span>
+                        <span class="team-handle">m_vance</span>
+                    </h3>
+                    <div class="team-role">DevOps &amp; CI/CD Lead</div>
+                    <div class="team-desc">
+                        Maintains automated cluster build scripts, continuous integration staging, and automated container health checks.
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-sub);">
+                        Status: Active Contributor
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <strong>Corporate Routing:</strong> <span>Standard policy applies (<code>{firstname}.{lastname}@uninvited.local</code>)</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Comms Security:</strong> <span>Direct email masked in public traces. Ref Base64 token in audit dump.</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Infrastructure:</strong> <span>uninvited.local (Internal Network Zone)</span>
-                </div>
-                <div class="contact-item">
-                    <strong>PGP Signature:</strong> <span>AK_SEC_41445249</span>
+
+                <div class="team-card">
+                    <h3>
+                        <span>Sarah Jenkins</span>
+                        <span class="team-handle">s_jenkins</span>
+                    </h3>
+                    <div class="team-role">Database Administrator &amp; Storage Reliability</div>
+                    <div class="team-desc">
+                        Oversees internal database schema migrations, encrypted archival storage, and relational warehouse synchronization.
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-sub);">
+                        Status: Active Contributor
+                    </div>
                 </div>
             </div>
+
+            <div class="policy-banner">
+                <strong>Corporate Comms &amp; Identity Routing Policy:</strong><br>
+                All engineering personnel utilize standardized company email addressing:
+                <code>{firstname}.{lastname}@uninvited.local</code>.<br>
+                <em>Notice: In adherence to our public privacy guideline (PRV-2026-08), full surnames have been separated from public team profiles and remain recorded exclusively within the internal infrastructure deployment audit directory.</em>
+            </div>
+
+            <h2>Current Infrastructure Footprint</h2>
+            <p>
+                Our live testbed orchestrates multiple containerized services interconnected over the internal virtual switch:
+            </p>
+            <ul style="margin-left: 24px; margin-bottom: 20px; font-size: 0.95rem;">
+                <li><strong>Scoring Hub (CTFd):</strong> Public scoreboard coordinating participant telemetry.</li>
+                <li><strong>Target Web Sandbox (Juice Shop):</strong> High-surface application instance running administrative mockups.</li>
+                <li><strong>Exchange Portal:</strong> Restricted internal gateway for encrypted asset handoffs.</li>
+            </ul>
         </main>
 
         <footer>
-            &copy; 2026 Adrian Kessler (k3ss_void). All rights reserved.
+            &copy; 2026 Notes from the Perimeter. Authored by Adrian (k3ss_void) &amp; Infrastructure Engineering Team.
         </footer>
     </div>
 </body>

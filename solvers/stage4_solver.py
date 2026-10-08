@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Stage 4 Solver - Web Traffic Forensics (Burp Suite History)
-Analyzes proxy_history.xml to discover the anomaly/outlier image accessed repeatedly.
-Flag: consignment_07.jpg or uninvited{consignment_07.jpg}
+Stage 4 Solver - Web Traffic Forensics (Burp Suite Proxy History)
+Analyzes proxy_history.xml to discover the most clicked/requested Juice Shop product image.
+Flag: apple_juice.jpg or uninvited{apple_juice.jpg}
 """
 
 import os
 import xml.etree.ElementTree as ET
 from collections import Counter
-import base64
 
 def solve():
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -38,7 +37,6 @@ def solve():
 
         # Count jpg / image assets
         if endpoint:
-            # Clean query parameters
             clean_path = endpoint.split('?')[0]
             if clean_path.endswith(('.jpg', '.jpeg', '.png', '.gif')):
                 filename = os.path.basename(clean_path)

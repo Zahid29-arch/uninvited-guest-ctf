@@ -1,0 +1,9 @@
+[CASE ID: 2026-UNINVITED-09]
+Artifact: Recovered SD card forensic dump
+Investigator: Adrian Kessler (k3ss_void)
+Status: Classified Evidence
+Subject: Adrian Kessler
+Credentials Note: Master pass-phrase set to Kessler123!
+Notice: This archive is protected with standard transit encryption.
+Contains captured Juice Shop evidence photos and product consignments.
+Cross-reference image consignments with Burp proxy activity logs to isolate anomalies.

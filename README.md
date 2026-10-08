@@ -10,25 +10,25 @@
 
 ## 📖 Storyline & Narrative Arc
 
-A confidential forensic audit leaks snippet records of an ongoing insider inquiry into investigator **Adrian Kessler** (handle: `k3ss_void`). As you retrace Kessler's digital footprint across public forums, the corporate web storefront, encrypted physical evidence dumps, and enterprise web proxy logs, you uncover an active covert exfiltration channel operated by a rogue accomplice: **Victor Hale**.
+A confidential forensic audit leaks snippet records of an ongoing insider inquiry into infrastructure architect **Adrian Kessler** (handle: `k3ss_void`). As you retrace Kessler's digital footprint across public forums, the corporate web storefront, encrypted evidence archives, and enterprise web proxy logs, you uncover an active covert exfiltration channel operated by a rogue accomplice: **Victor Hale**.
 
 ```
-[Stage 1: OSINT] ──► Target Identified (Adrian Kessler)
+[Stage 1: OSINT] ──► Target Discovered Across Multi-Source Leak (Adrian Kessler)
       │
       ▼
-[Stage 2: Web]   ──► Target Account Discovery (adrian.kessler)
+[Stage 2: Web]   ──► SQL Injection Bypass on Juice Shop (adrian.kessler)
       │
       ▼
-[Stage 3: Crypto]──► Evidence Archive Cracked (Kessler123!)
+[Stage 3: Crypto]──► Evidence Archive Cracked & Product Images Extracted (Kessler123!)
       │
       ▼
-[Stage 4: Forensics]► Anomaly Image Isolated (consignment_07.jpg)
+[Stage 4: Forensics]► Most Clicked Product Image Isolated from Logs (apple_juice.jpg)
       │
       ▼
-[Stage 5: Stego] ──► Covert Portal Link Extracted (http://localhost:8086)
+[Stage 5: Stego] ──► Covert Exchange Portal URL Extracted (http://localhost:8086)
       │
       ▼
-[Stage 6: Network] ─► Exfiltration Accomplice Unmasked (Victor Hale)
+[Stage 6: Network] ─► Rogue Accomplice Unmasked via Packet Analysis (Victor Hale)
 ```
 
 ---
@@ -37,14 +37,14 @@ A confidential forensic audit leaks snippet records of an ongoing insider inquir
 
 | Stage | Category | Challenge Name | Artifact / Target | Flag / Solution | CTFd Flag Format |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | **OSINT** | *Perimeter Footprint* | `stages/stage1_osint/` | Real Name: `Adrian Kessler` | `Adrian Kessler` or `uninvited{adrian_kessler}` |
-| **2** | **Web** | *The Target's Cart* | `http://localhost:3000` | Shop Username: `adrian.kessler` | `adrian.kessler` or `uninvited{adrian.kessler}` |
-| **3** | **Crypto** | *Classified Vault* | `evidence_photos.zip` | Master Password: `Kessler123!` | `Kessler123!` or `uninvited{Kessler123!}` |
-| **4** | **Forensics** | *Burp Anomaly* | `proxy_history.xml` | Outlier Image: `consignment_07.jpg` | `consignment_07.jpg` or `uninvited{consignment_07.jpg}` |
-| **5** | **Stego** | *Covert Transmission* | `consignment_07.jpg` | Hidden Gateway: `http://localhost:8086` | `http://localhost:8086` or `uninvited{http://localhost:8086}` |
-| **6** | **Network** | *The Uninvited Guest* | `upload_capture.pcap` | Rogue Accomplice: `Victor Hale` | `Victor Hale` or `uninvited{victor_hale}` |
+| **1** | **OSINT** | *Find the Uninvited Guest* | `stages/stage1_osint/` | Real Name: `Adrian Kessler` | `Adrian Kessler` or `uninvited{adrian_kessler}` or `adrian.kessler@uninvited.local` |
+| **2** | **Web Security** | *Front Door* | `http://localhost:3000` | Profile Name: `adrian.kessler` | `adrian.kessler` or `uninvited{adrian.kessler}` |
+| **3** | **Cryptography** | *Locked Evidence* | `evidence_photos.zip` | Master Password: `Kessler123!` | `Kessler123!` or `uninvited{Kessler123!}` |
+| **4** | **Digital Forensics** | *Follow the Clicks* | `proxy_history.xml` | Outlier Product Image: `apple_juice.jpg` | `apple_juice.jpg` or `uninvited{apple_juice.jpg}` |
+| **5** | **Steganography** | *Hidden in Plain Sight* | `apple_juice.jpg` | Hidden Portal: `http://localhost:8086` | `http://localhost:8086` or `uninvited{http://localhost:8086}` |
+| **6** | **Networking** | *Unmasking the Uninvited Guest*| `upload_capture.pcap` | Rogue Accomplice: `Victor Hale` | `Victor Hale` or `uninvited{victor_hale}` |
 
-> **Note on Flag Formatting**: The challenges are designed to accept either the direct canonical answer (e.g., `Adrian Kessler`, `consignment_07.jpg`) or the standard wrapped CTF format (e.g., `uninvited{adrian_kessler}`, `uninvited{consignment_07.jpg}`).
+> **Note on Flag Formatting**: CTFd accepts both canonical answers (e.g., `Adrian Kessler`, `apple_juice.jpg`) and wrapped CTF format (e.g., `uninvited{adrian_kessler}`, `uninvited{apple_juice.jpg}`).
 
 ---
 
@@ -67,14 +67,14 @@ The environment runs via Docker Compose on an isolated bridge network (`uninvite
         │                         │                     │
         +─────────────────────────┴─────────────────────+
                                   │
-                           uninvited_net
+                            uninvited_net
 ```
 
 ### Services
 
 1. **CTFd (`port 8000`)**: The official CTFd tournament scoring and challenge management interface.
-2. **OWASP Juice Shop (`port 3000`)**: Seeded with target account `adrian.kessler@uninvited.local` (`admin` privilege).
-3. **The Exchange Portal (`port 8086`)**: Custom Node.js/Express service serving the public gallery (`/gallery/consignment_07.jpg`), authenticated transit vault (`/portal`), and Wireshark capture download (`/upload_capture.pcap`).
+2. **OWASP Juice Shop (`port 3000`)**: Seeded with target account `adrian.kessler@uninvited.local` (`admin` privilege). Evidence Vault at `/rest/admin/evidence_photos.zip`.
+3. **The Exchange Portal (`port 8086`)**: Restricted Node.js/Express service hosting the authenticated transfer vault (`/portal`) and forensic Wireshark capture (`/upload_capture.pcap`).
 
 ---
 
@@ -82,7 +82,7 @@ The environment runs via Docker Compose on an isolated bridge network (`uninvite
 
 ### 1. Prerequisites
 - Docker & Docker Compose
-- Python 3.10+ (for solver scripts and test suite)
+- Python 3.10+
 
 ### 2. Launch the Environment
 ```bash
@@ -94,77 +94,14 @@ Run the automated integration test suite:
 ```bash
 python -m unittest tests/test_environment.py
 ```
-Expected output:
-```text
-Ran 6 tests in 0.200s
-OK
-```
 
-### 4. Access Services
-- **CTFd Scoring Platform**: [http://localhost:8000](http://localhost:8000)
-- **OWASP Juice Shop**: [http://localhost:3000](http://localhost:3000)
-- **The Exchange Portal**: [http://localhost:8086](http://localhost:8086)
-
----
-
-## 🛠️ Automated Solvers
-
-Each challenge stage includes a standalone verification script in the `solvers/` directory:
-
+### 4. Run Automated Solvers
+Execute end-to-end solvers from Stage 1 to Stage 6:
 ```bash
-# Stage 1: OSINT Extraction
 python solvers/stage1_solver.py
-
-# Stage 2: Juice Shop Account Verification
 python solvers/stage2_solver.py
-
-# Stage 3: Archive Dictionary Attack
 python solvers/stage3_solver.py
-
-# Stage 4: Burp Log Frequency Analysis
 python solvers/stage4_solver.py
-
-# Stage 5: Steganography URL Extraction
 python solvers/stage5_solver.py
-
-# Stage 6: PCAP Network Traffic Analysis
 python solvers/stage6_solver.py
 ```
-
----
-
-## 📂 Repository Layout
-
-```
-uninvited-guest-ctf/
-├── docker-compose.yml              # Multi-container orchestration
-├── platform/
-│   ├── users.yml                   # Seed configuration for Juice Shop
-│   └── exchange-portal/            # Custom Stage 5/6 challenge service
-│       ├── server.js               # Express portal authentication & routing
-│       ├── package.json
-│       ├── Dockerfile
-│       └── public/                 # Static gallery images & PCAP capture
-├── stages/                         # Raw challenge artifacts provided to players
-│   ├── stage1_osint/               # Leaked HTML dumps & blog pages
-│   ├── stage3_crypto/              # evidence_photos.zip & wordlist.txt
-│   ├── stage4_forensics/           # proxy_history.xml (Burp Suite export)
-│   ├── stage5_stego/               # consignment_07.jpg & gallery_02.jpg
-│   └── stage6_pcap/                # upload_capture.pcap & generator script
-├── solvers/                        # Reference exploit & solution scripts
-│   ├── stage1_solver.py
-│   ├── stage2_solver.py
-│   ├── stage3_solver.py
-│   ├── stage4_solver.py
-│   ├── stage5_solver.py
-│   └── stage6_solver.py
-├── tests/
-│   └── test_environment.py         # Integration health checks
-├── README.md                       # Platform documentation (this file)
-└── WRITEUP.md                      # Complete author walkthrough
-```
-
----
-
-## 📄 License
-MIT License. Created for CTF training, security research, and demonstration purposes.
