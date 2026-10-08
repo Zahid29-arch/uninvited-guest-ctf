@@ -11,10 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
-// Serve static assets from public/ (including /gallery/ and /upload_capture.pcap)
+// Serve static assets from public/ (including /gallery/)
 const publicDir = path.join(__dirname, 'public');
 app.use(express.static(publicDir));
-// Explicit route for gallery if accessed via /gallery
 app.use('/gallery', express.static(path.join(publicDir, 'gallery')));
 
 // Check authentication
@@ -36,22 +35,22 @@ function renderLoginPage(req, res) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Exchange Portal :: Restricted Gateway</title>
+    <title>The Exchange :: Covert Network Gateway</title>
     <style>
         :root {
-            --bg: #0b0f19;
-            --card: #151d2f;
-            --border: #232f48;
-            --accent: #3b82f6;
+            --bg: #07090e;
+            --card: #0f141f;
+            --border: #1e2638;
+            --accent: #ef4444;
             --text: #f1f5f9;
-            --muted: #94a3b8;
+            --muted: #8b9bb4;
             --danger: #ef4444;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg);
             color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -64,24 +63,25 @@ function renderLoginPage(req, res) {
             border-radius: 12px;
             padding: 36px 32px;
             width: 100%;
-            max-width: 420px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 440px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.7);
         }
-        .header { text-align: center; margin-bottom: 28px; }
+        .header { text-align: center; margin-bottom: 26px; }
         .badge {
             display: inline-block;
-            background: rgba(59, 130, 246, 0.15);
+            background: rgba(239, 68, 68, 0.15);
             border: 1px solid var(--accent);
             color: var(--accent);
             font-family: monospace;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             padding: 4px 10px;
             border-radius: 20px;
             text-transform: uppercase;
+            letter-spacing: 1px;
             margin-bottom: 12px;
         }
-        h1 { font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
-        p.sub { color: var(--muted); font-size: 0.88rem; }
+        h1 { font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 6px; letter-spacing: -0.3px; }
+        p.sub { color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
         .alert-error {
             background: rgba(239, 68, 68, 0.15);
             border: 1px solid var(--danger);
@@ -93,54 +93,68 @@ function renderLoginPage(req, res) {
             text-align: center;
         }
         .form-group { margin-bottom: 18px; }
-        label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; }
+        label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
         input[type="text"], input[type="password"] {
             width: 100%;
-            background: #0b0f19;
+            background: #07090e;
             border: 1px solid var(--border);
             border-radius: 6px;
             padding: 12px 14px;
             color: #fff;
             font-size: 0.95rem;
+            font-family: monospace;
             outline: none;
+            transition: border-color 0.2s;
         }
-        input[type="text"]:focus, input[type="password"]:focus { border-color: var(--accent); }
-        button.btn-submit {
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: var(--accent);
+        }
+        .btn-submit {
             width: 100%;
-            background: var(--accent);
-            color: #fff;
+            background: #b91c1c;
+            color: white;
             border: none;
-            padding: 12px;
             border-radius: 6px;
+            padding: 12px;
             font-size: 0.95rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             margin-top: 8px;
+            letter-spacing: 0.5px;
+            transition: background 0.2s;
         }
-        button.btn-submit:hover { opacity: 0.9; }
-        .footer-note { text-align: center; margin-top: 24px; font-size: 0.75rem; color: #475569; }
+        .btn-submit:hover { background: #dc2626; }
+        .footer-note {
+            text-align: center;
+            font-family: monospace;
+            font-size: 0.72rem;
+            color: #55657e;
+            margin-top: 24px;
+            border-top: 1px solid var(--border);
+            padding-top: 14px;
+        }
     </style>
 </head>
 <body>
     <div class="login-card">
         <div class="header">
-            <div class="badge">SECURE GATEWAY</div>
-            <h1>The Exchange Portal</h1>
-            <p class="sub">Operator Authentication Terminal</p>
+            <div class="badge">Restricted Contraband Network</div>
+            <h1>THE EXCHANGE // PORTAL</h1>
+            <p class="sub">Encrypted internal clearinghouse for illicit consignments, contraband exchanges, and exfiltrated payloads.</p>
         </div>
         ${errorHtml}
         <form action="/login" method="POST">
             <div class="form-group">
-                <label for="username">Username or Operator Email</label>
+                <label for="username">Operator Email / Handle</label>
                 <input type="text" id="username" name="username" placeholder="adrian.kessler@uninvited.local" required autocomplete="off">
             </div>
             <div class="form-group">
-                <label for="password">Security Password</label>
+                <label for="password">Cryptographic Master Key</label>
                 <input type="password" id="password" name="password" placeholder="••••••••••••" required>
             </div>
-            <button type="submit" class="btn-submit">Authenticate</button>
+            <button type="submit" class="btn-submit">Access Exchange Vault</button>
         </form>
-        <div class="footer-note">NODE: EXCH-8086 • UNINVITED INTERNAL TRANSIT</div>
+        <div class="footer-note">NODE: EXCH-8086 • UNINVITED CLANDESTINE ROUTING</div>
     </div>
 </body>
 </html>`);
@@ -190,25 +204,26 @@ app.get('/portal', (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Exchange Portal :: Dashboard</title>
+    <title>The Exchange :: Active Consignment Vault</title>
     <style>
         :root {
-            --bg: #0b0f19;
-            --card: #151d2f;
-            --border: #232f48;
-            --accent: #3b82f6;
+            --bg: #07090e;
+            --card: #0f141f;
+            --border: #1e2638;
+            --accent: #ef4444;
             --success: #10b981;
             --text: #f1f5f9;
-            --muted: #94a3b8;
+            --muted: #8b9bb4;
+            --warning: #f59e0b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg);
             color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
             padding: 30px 20px;
         }
-        .container { max-width: 860px; margin: 0 auto; }
+        .container { max-width: 920px; margin: 0 auto; }
         .topbar {
             display: flex;
             justify-content: space-between;
@@ -219,11 +234,12 @@ app.get('/portal', (req, res) => {
             border-radius: 10px;
             margin-bottom: 24px;
         }
-        .brand { font-size: 1.1rem; font-weight: 700; color: #fff; }
-        .user-tag { color: var(--success); font-weight: 600; }
+        .brand { font-size: 1.15rem; font-weight: 800; color: #fff; letter-spacing: 0.5px; }
+        .brand span { color: var(--accent); }
+        .user-tag { color: var(--success); font-weight: 600; font-family: monospace; }
         .btn-logout {
-            background: #1e293b;
-            color: #ef4444;
+            background: #1e2638;
+            color: #f87171;
             border: 1px solid #334155;
             padding: 6px 12px;
             border-radius: 6px;
@@ -236,61 +252,112 @@ app.get('/portal', (req, res) => {
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 28px;
+            margin-bottom: 24px;
         }
-        h2 { font-size: 1.3rem; margin-bottom: 12px; color: #fff; }
-        p.desc { color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; }
-        .files-table { width: 100%; border-collapse: collapse; }
-        .files-table th { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 0.8rem; text-transform: uppercase; }
-        .files-table td { padding: 16px; border-bottom: 1px solid #1e293b; font-size: 0.92rem; }
-        .btn-download {
+        h2 { font-size: 1.25rem; margin-bottom: 10px; color: #fff; display: flex; align-items: center; gap: 8px; }
+        p.desc { color: var(--muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px; }
+        .status-badge {
             display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.85rem;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+            border: 1px solid var(--success);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: monospace;
         }
-        .btn-download:hover { background: #2563eb; }
-        .badge { background: #1e293b; color: var(--muted); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .badge-danger {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+        .badge-warn {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--warning);
+            border-color: var(--warning);
+        }
+        .ledger-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.88rem; }
+        .ledger-table th { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 0.78rem; text-transform: uppercase; font-family: monospace; }
+        .ledger-table td { padding: 14px; border-bottom: 1px solid #141a29; vertical-align: middle; }
+        .notice-box {
+            background: #141720;
+            border-left: 4px solid var(--warning);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 24px;
+            font-size: 0.88rem;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+        .notice-box strong { color: var(--warning); }
+        code { background: #07090e; padding: 2px 6px; border-radius: 4px; color: #f87171; font-family: monospace; font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="topbar">
-            <div class="brand">THE EXCHANGE PORTAL</div>
+            <div class="brand">THE EXCHANGE <span>//</span> CONTRABAND VAULT</div>
             <div>
-                <span>Authenticated: <strong class="user-tag">${username}</strong></span>
+                <span>Session: <strong class="user-tag">${username}</strong></span>
                 <a href="/logout" class="btn-logout" style="margin-left: 14px;">Sign Out</a>
             </div>
         </div>
+
         <div class="panel">
-            <h2>Authorized Transfer Vault</h2>
+            <h2>📦 Active Consignment Manifests &amp; Exfiltration Ledger</h2>
             <p class="desc">
-                Welcome, Operator. All transactions routed across <code>uninvited_net</code> are mirrored here.
+                Authenticated clearance verified. This terminal mirrors covert file exchanges and illicit shipments dispatched through <code>uninvited_net</code>.
             </p>
-            <table class="files-table">
+
+            <table class="ledger-table">
                 <thead>
-                    <tr><th>Filename</th><th>Format</th><th>Classification</th><th>Action</th></tr>
+                    <tr>
+                        <th>Manifest ID</th>
+                        <th>Consignment Description</th>
+                        <th>Origin Host</th>
+                        <th>Operator Alias</th>
+                        <th>Status</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>📄 upload_capture.pcap</strong></td>
-                        <td><span class="badge">Wireshark PCAP</span></td>
-                        <td><span class="badge" style="color:#f59e0b; border: 1px solid #78350f;">CONFIDENTIAL</span></td>
-                        <td><a href="/upload_capture.pcap" class="btn-download" download>Download Capture</a></td>
+                        <td><code>EXFIL-99201</code></td>
+                        <td><strong>Classified Consignment Manifest &amp; Contraband Assets</strong></td>
+                        <td><code>10.5.5.15 [00:1c:42:8a:b1:15]</code></td>
+                        <td><code>DragonFly</code></td>
+                        <td><span class="status-badge">DISPATCHED</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>EXFIL-99188</code></td>
+                        <td><strong>Encrypted Vault Partition Backup</strong></td>
+                        <td><code>10.5.5.80 [52:54:00:12:34:80]</code></td>
+                        <td><code>k3ss_void</code></td>
+                        <td><span class="status-badge badge-warn">ARCHIVED</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>EXFIL-99042</code></td>
+                        <td><strong>Edge Proxy Access Credentials &amp; Keyrings</strong></td>
+                        <td><code>10.5.5.34 [00:1c:42:8a:b1:34]</code></td>
+                        <td><code>system_relay</code></td>
+                        <td><span class="status-badge badge-warn">CLOSED</span></td>
                     </tr>
                 </tbody>
             </table>
+
+            <div class="notice-box">
+                <strong>⚠️ INVESTIGATIVE ALERT: TRAFFIC INTERCEPTION DETECTED</strong><br>
+                Perimeter sensors intercepted the raw network transmission for <code>EXFIL-99201</code>. The raw packet capture file (<code>upload_capture.pcap</code>) has been captured and quarantined on the <strong>CTFd Incident Desk (Stage 6)</strong>.<br>
+                <em>Investigators must examine the PCAP in Wireshark to inspect the HTTP POST request originating from host <code>10.5.5.15</code> (MAC <code>00:1c:42:8a:b1:15</code>) and decode the operator token to confirm the culprit's true identity.</em>
+            </div>
         </div>
     </div>
 </body>
 </html>`);
 });
 
-// Download alias routes
-app.get('/download/upload_capture.pcap', (req, res) => {
+// Download alias route (retained for backward compatibility and integration test health check)
+app.get('/upload_capture.pcap', (req, res) => {
     const filePath = path.join(publicDir, 'upload_capture.pcap');
     if (fs.existsSync(filePath)) {
         res.download(filePath, 'upload_capture.pcap');

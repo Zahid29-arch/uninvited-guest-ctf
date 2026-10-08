@@ -3,20 +3,23 @@
 Synthetic PCAP Generator using Scapy
 Generates: upload_capture.pcap
 Simulates background network noise (DNS queries/responses, TCP SYN/ACK handshakes,
-routine HTTP GETs) hiding exactly ONE HTTP POST request to an /upload endpoint
-originating from IP 10.5.5.15 (representing the target 'Victor Hale').
+DHCP leases, ARP queries, routine HTTP GETs) hiding exactly ONE rogue HTTP POST request to an /upload endpoint
+originating from IP 10.5.5.15 (MAC: 00:1c:42:8a:b1:15, Hostname: VH-WORKSTATION),
+representing the target accomplice 'Victor Hale'.
 """
 
 import logging
 # Suppress scapy runtime warnings
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
+import os
 import random
 from scapy.all import (
-    Ether, IP, TCP, UDP, DNS, DNSQR, DNSRR, Raw, wrpcap
+    Ether, IP, TCP, UDP, DNS, DNSQR, DNSRR, BOOTP, DHCP, ARP, Raw, wrpcap
 )
 
-OUTPUT_FILE = "upload_capture.pcap"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, "upload_capture.pcap")
 
 # Network Node Mapping
 GATEWAY_IP = "10.5.5.1"
@@ -29,14 +32,15 @@ SERVER_PORT = 80
 # Target Host (Victor Hale)
 TARGET_IP = "10.5.5.15"
 TARGET_MAC = "00:1c:42:8a:b1:15"
+TARGET_HOSTNAME = "VH-WORKSTATION"
 TARGET_PORT = 52134
 
 # Decoy Background Hosts
 NOISE_HOSTS = [
-    {"ip": "10.5.5.21", "mac": "00:1c:42:8a:b1:21"},
-    {"ip": "10.5.5.34", "mac": "00:1c:42:8a:b1:34"},
-    {"ip": "10.5.5.42", "mac": "00:1c:42:8a:b1:42"},
-    {"ip": "10.5.5.58", "mac": "00:1c:42:8a:b1:58"}
+    {"ip": "10.5.5.21", "mac": "00:1c:42:8a:b1:21", "hostname": "SEC-DESK-21"},
+    {"ip": "10.5.5.34", "mac": "00:1c:42:8a:b1:34", "hostname": "OPS-NODE-34"},
+    {"ip": "10.5.5.42", "mac": "00:1c:42:8a:b1:42", "hostname": "BUILD-RUNNER-42"},
+    {"ip": "10.5.5.58", "mac": "00:1c:42:8a:b1:58", "hostname": "QA-RELAY-58"}
 ]
 
 DNS_DOMAINS = [
@@ -78,6 +82,65 @@ def create_dns_transaction(client_ip, client_mac, qname, answer_ip, base_time):
     r_pkt.time = base_time + random.uniform(0.005, 0.025)
     packets.append(r_pkt)
 
+    return packets
+
+def create_dhcp_lease(client_ip, client_mac, hostname, base_time):
+    """Creates DHCP Request and ACK binding MAC and IP to a Hostname."""
+    packets = []
+    mac_bytes = bytes.fromhex(client_mac.replace(":", ""))
+
+    # DHCP Request
+    req = (
+        Ether(src=client_mac, dst="ff:ff:ff:ff:ff:ff") /
+        IP(src="0.0.0.0", dst="255.255.255.255") /
+        UDP(sport=68, dport=67) /
+        BOOTP(chaddr=mac_bytes + b'\x00'*10, xid=0x4291823) /
+        DHCP(options=[
+            ("message-type", "request"),
+            ("requested_addr", client_ip),
+            ("hostname", hostname),
+            ("end")
+        ])
+    )
+    req.time = base_time
+    packets.append(req)
+
+    # DHCP ACK
+    ack = (
+        Ether(src=GATEWAY_MAC, dst=client_mac) /
+        IP(src=GATEWAY_IP, dst=client_ip) /
+        UDP(sport=67, dport=68) /
+        BOOTP(chaddr=mac_bytes + b'\x00'*10, yiaddr=client_ip, xid=0x4291823) /
+        DHCP(options=[
+            ("message-type", "ack"),
+            ("server_id", GATEWAY_IP),
+            ("lease_time", 86400),
+            ("hostname", hostname),
+            ("end")
+        ])
+    )
+    ack.time = base_time + 0.005
+    packets.append(ack)
+    return packets
+
+def create_arp_resolution(client_ip, client_mac, base_time):
+    """Creates an ARP who-has query and is-at reply."""
+    packets = []
+    # Request
+    req = (
+        Ether(src=GATEWAY_MAC, dst="ff:ff:ff:ff:ff:ff") /
+        ARP(op=1, hwsrc=GATEWAY_MAC, psrc=GATEWAY_IP, hwdst="00:00:00:00:00:00", pdst=client_ip)
+    )
+    req.time = base_time
+    packets.append(req)
+
+    # Reply
+    rep = (
+        Ether(src=client_mac, dst=GATEWAY_MAC) /
+        ARP(op=2, hwsrc=client_mac, psrc=client_ip, hwdst=GATEWAY_MAC, pdst=GATEWAY_IP)
+    )
+    rep.time = base_time + 0.002
+    packets.append(rep)
     return packets
 
 def create_tcp_http_get_session(client_ip, client_mac, path, base_time):
@@ -154,10 +217,12 @@ def create_tcp_http_get_session(client_ip, client_mac, path, base_time):
 
 def create_target_upload_session(base_time):
     """
-    Creates the target session from Victor Hale (10.5.5.15):
+    Creates the target session from Victor Hale (10.5.5.15 / MAC 00:1c:42:8a:b1:15):
+    - DHCP lease & ARP binding host 10.5.5.15 and MAC to VH-WORKSTATION
+    - Pre-flight DNS
     - Full TCP handshake to SERVER_IP:80
     - Exactly ONE HTTP POST request to /upload
-    - Server ACK and HTTP 200 OK response
+    - Operator token VmljdG9yIEhhbGU= (Victor Hale)
     - Clean connection teardown
     """
     packets = []
@@ -165,6 +230,15 @@ def create_target_upload_session(base_time):
     c_seq = 20491820
     s_seq = 80194820
     t = base_time
+
+    # Pre-flight DHCP Lease & ARP
+    dhcp_pkts = create_dhcp_lease(TARGET_IP, TARGET_MAC, TARGET_HOSTNAME, t)
+    packets.extend(dhcp_pkts)
+    t += 0.02
+
+    arp_pkts = create_arp_resolution(TARGET_IP, TARGET_MAC, t)
+    packets.extend(arp_pkts)
+    t += 0.02
 
     # Pre-flight DNS for exchange.uninvited.local
     dns_pkts = create_dns_transaction(TARGET_IP, TARGET_MAC, "exchange.uninvited.local", SERVER_IP, t)
@@ -190,9 +264,7 @@ def create_target_upload_session(base_time):
     ack1.time = t
     packets.append(ack1)
 
-    # 4. HTTP POST /upload by accomplice (10.5.5.15)
-    # Identity is encoded with transport Base64 token (VmljdG9yIEhhbGU= -> Victor Hale)
-    # requiring the player to perform actual packet stream inspection rather than a naive strings grep.
+    # 4. HTTP POST /upload by accomplice (10.5.5.15, MAC: 00:1c:42:8a:b1:15)
     t += 0.005
     boundary = "---------------------------39281749281739281749"
     post_body = (
@@ -205,7 +277,7 @@ def create_target_upload_session(base_time):
         f"--{boundary}\r\n"
         f"Content-Disposition: form-data; name=\"file\"; filename=\"confidential_exfil_manifest.json\"\r\n"
         f"Content-Type: application/json\r\n\r\n"
-        f'{{"manifest_id":"EXFIL-99201","sender_identity":"VmljdG9yIEhhbGU=","encoding":"base64","alias":"DragonFly","status":"dispatched"}}\r\n'
+        f'{{"manifest_id":"EXFIL-99201","sender_identity":"VmljdG9yIEhhbGU=","encoding":"base64","alias":"DragonFly","source_ip":"10.5.5.15","source_mac":"00:1c:42:8a:b1:15","device_hostname":"VH-WORKSTATION","status":"dispatched"}}\r\n'
         f"--{boundary}--\r\n"
     ).encode()
 
@@ -214,6 +286,9 @@ def create_target_upload_session(base_time):
         f"Host: exchange.uninvited.local\r\n"
         f"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\r\n"
         f"X-Exfil-Operator: VmljdG9yIEhhbGU=\r\n"
+        f"X-Host-IP: 10.5.5.15\r\n"
+        f"X-Host-MAC: 00:1c:42:8a:b1:15\r\n"
+        f"X-Device-Hostname: VH-WORKSTATION\r\n"
         f"X-Agent-Alias: DragonFly\r\n"
         f"Accept: application/json, text/plain, */*\r\n"
         f"Origin: http://exchange.uninvited.local\r\n"
@@ -238,7 +313,7 @@ def create_target_upload_session(base_time):
 
     # 6. Server HTTP 200 OK Response
     t += 0.015
-    resp_body = b'{"status":"success","upload_id":"UP-88412","received_from_token":"VmljdG9yIEhhbGU=","encoding":"base64","file":"confidential_exfil_manifest.json"}'
+    resp_body = b'{"status":"success","upload_id":"UP-88412","received_from_ip":"10.5.5.15","received_from_mac":"00:1c:42:8a:b1:15","received_from_token":"VmljdG9yIEhhbGU=","encoding":"base64","file":"confidential_exfil_manifest.json"}'
     resp_payload = (
         b"HTTP/1.1 200 OK\r\n"
         b"Date: Sun, 27 Sep 2026 15:42:11 GMT\r\n"
@@ -282,8 +357,13 @@ def generate_pcap():
     all_packets = []
     base_timestamp = 1790523600.0  # e.g. Sun, Sep 27 2026 15:40:00 UTC
 
-    # 1. Generate Background DNS Noise
+    # 1. Background Noise: DHCP and DNS
     current_time = base_timestamp
+    for host in NOISE_HOSTS:
+        dhcp_noise = create_dhcp_lease(host["ip"], host["mac"], host["hostname"], current_time)
+        all_packets.extend(dhcp_noise)
+        current_time += random.uniform(0.1, 0.4)
+
     for _ in range(12):
         host = random.choice(NOISE_HOSTS)
         domain, ip = random.choice(DNS_DOMAINS)
@@ -291,7 +371,7 @@ def generate_pcap():
         all_packets.extend(dns_batch)
         current_time += random.uniform(0.5, 2.5)
 
-    # 2. Generate Background HTTP GET and TCP Handshake Noise (Pre-Target)
+    # 2. Background HTTP GET and TCP Handshake Noise
     decoy_paths = [
         "/", "/index.html", "/static/app.css", "/static/bundle.js",
         "/api/health", "/favicon.ico", "/gallery/catalog", "/assets/logo.png"
@@ -303,13 +383,13 @@ def generate_pcap():
         all_packets.extend(http_batch)
         current_time += random.uniform(1.0, 3.5)
 
-    # 3. Inject the TARGET HTTP POST from Victor Hale (10.5.5.15)
+    # 3. Inject TARGET HTTP POST from Victor Hale (10.5.5.15)
     target_time = current_time + random.uniform(1.0, 2.0)
     target_packets = create_target_upload_session(target_time)
     all_packets.extend(target_packets)
     current_time = target_time + 0.5
 
-    # 4. Generate More Background Noise Post-Target
+    # 4. Post-Target Noise
     for _ in range(8):
         host = random.choice(NOISE_HOSTS)
         path = random.choice(decoy_paths)
@@ -330,7 +410,6 @@ def generate_pcap():
     # Write PCAP using Scapy
     wrpcap(OUTPUT_FILE, all_packets)
 
-    # Summary analysis
     print(f"[+] Successfully wrote {len(all_packets)} packets to '{OUTPUT_FILE}'.")
     
     # Verification

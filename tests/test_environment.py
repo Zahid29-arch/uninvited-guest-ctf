@@ -65,7 +65,7 @@ class TestCTFEnvironment(unittest.TestCase):
             timeout=5
         )
         self.assertEqual(login_resp.status_code, 200)
-        self.assertIn('Authorized Transfer Vault', login_resp.text, 'Portal dashboard failed to render after login')
+        self.assertIn('Consignment Vault', login_resp.text, 'Portal dashboard failed to render after login')
 
         pcap_resp = session.get('http://localhost:8086/upload_capture.pcap', timeout=5)
         self.assertEqual(pcap_resp.status_code, 200, 'Failed to download upload_capture.pcap')
