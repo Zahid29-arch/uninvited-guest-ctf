@@ -28,12 +28,16 @@ Uncover the real identity of the target behind the handles `k3ss_void` and `Unin
 - `stages/stage1_osint/paste_dump.txt`
 
 ### Walkthrough
-1. Inspect `leaked_paste.html` or `paste_dump.txt`. 
-2. The leaked database snippet contains:
+1. Inspect `leaked_paste.html`, `paste_dump.txt`, or `blog_about.html`.
+2. The target engineer is identified as **Adrian Kessler** (alias: `k3ss_void`).
+3. To prevent scraping, his corporate email is masked using a Base64 identity token:
    ```text
-   ID: 4401 | Name: Adrian Kessler | Email: adrian.kessler@uninvited.local | Group: Resellers
+   IdentityToken = YWRyaWFuLmtlc3NsZXJAdW5pbnZpdGVkLmxvY2Fs
    ```
-3. Corroborate by reviewing `blog_about.html`, which describes Adrian Kessler's background as a security researcher and forensic analyst.
+4. Decoding this token (`echo "YWRyaWFuLmtlc3NsZXJAdW5pbnZpdGVkLmxvY2Fs" | base64 -d`) or applying the noted company policy `{firstname}.{lastname}@uninvited.local` reveals his email address:
+   ```text
+   adrian.kessler@uninvited.local
+   ```
 
 ### Flag
 - **Standard**: `Adrian Kessler`
@@ -74,15 +78,11 @@ Download the classified forensic archive restricted to Administrator clearance o
 - Wordlist: `stages/stage3_crypto/wordlist.txt`
 
 ### Walkthrough
-1. As demonstrated in the target's profile notes, Adrian Kessler stores his incident archive in the internal evidence vault.
-2. Attempting to download `http://localhost:3000/rest/admin/evidence_photos.zip` without administrator credentials returns **HTTP 401 Unauthorized** (or **403 Forbidden** for non-admin accounts).
-3. Using the Administrator session token obtained in Stage 2 (or by navigating to `http://localhost:3000/rest/admin/evidence-vault?token=<JWT>`), download `evidence_photos.zip`:
-   ```bash
-   python solvers/stage3_solver.py
-   ```
+1. Once logged into Juice Shop as Adrian Kessler, an in-page **`🔐 Evidence Vault`** button appears in the top navigation bar.
+2. Clicking it opens the admin terminal, allowing direct download of `evidence_photos.zip` (also accessible via `http://localhost:3000/rest/admin/evidence_photos.zip?token=<JWT>`).
+3. Attempting to download without administrator credentials returns **HTTP 401 Unauthorized** (or **403 Forbidden** for normal customer accounts).
 4. Perform a dictionary attack against the downloaded archive using the provided `wordlist.txt`:
    ```bash
-   # Cracking using Python:
    python solvers/stage3_solver.py
 
    # Or using zip2john / John the Ripper:
@@ -125,17 +125,37 @@ Analyze web proxy history to identify an unusual, high-frequency image asset ret
 ## 🖼️ Stage 5: Stego - Covert Transmission
 
 ### Objective
-Extract the hidden covert channel embedded inside `consignment_07.jpg`.
+Extract the hidden covert gateway link embedded inside `consignment_07.jpg` using steganography tools.
 
 ### Provided Artifacts
-- `stages/stage5_stego/consignment_07.jpg` (also hosted live at `http://localhost:8086/gallery/consignment_07.jpg`)
+- `stages/stage5_stego/consignment_07.jpg` (hosted live at `http://localhost:8086/gallery/consignment_07.jpg`)
+
+### Tool Installation Guide for Players
+Players need the `steghide` utility to extract data embedded into JPEG DCT coefficients.
+
+- **On Kali Linux / Debian / Ubuntu**:
+  ```bash
+  sudo apt update && sudo apt install -y steghide
+  ```
+- **On macOS (via Homebrew)**:
+  ```bash
+  brew install steghide
+  ```
+- **On Windows (via Docker sandbox)**:
+  ```powershell
+  docker run --rm -v "${PWD}:/data" -w /data debian:bookworm-slim bash -c "apt update && apt install -y steghide && steghide extract -sf consignment_07.jpg -p '' && cat link.txt"
+  ```
 
 ### Walkthrough
-1. Analyze `consignment_07.jpg` using steganography detection tools.
-2. Extract the hidden payload using `steghide` with a blank passphrase (`-p ""`):
+1. Verify the carrier image contains embedded data:
+   ```bash
+   steghide info consignment_07.jpg
+   ```
+2. Extract the hidden payload:
    ```bash
    steghide extract -sf consignment_07.jpg -p ""
    ```
+   *(Or run `python solvers/stage5_solver.py`)*
 3. Steghide writes the extracted payload to `link.txt`.
 4. Inspecting `link.txt` reveals:
    ```text
@@ -165,24 +185,44 @@ Access The Exchange Portal, download the intercepted network trace, and identify
    - **Password**: `Kessler123!`
 3. After logging in, the dashboard displays the **Authorized Transfer Vault**.
 4. Download `upload_capture.pcap` (21.8 KB).
-5. Open the capture in Wireshark or analyze with Scapy:
-   ```bash
-   python solvers/stage6_solver.py
+5. Open the capture in Wireshark. 
+   *(Note: Naive string grepping for names will fail because transit identifiers are protected!)*
+6. Filter for HTTP POST requests in Wireshark:
+   ```text
+   http.request.method == "POST"
    ```
-6. Filter for HTTP POST requests (`http.request.method == "POST"`):
+7. Locate the single rogue POST transaction:
    - **Source IP**: `10.5.5.15`
    - **Destination**: `10.5.5.80` (Exchange Server)
    - **Endpoint**: `POST /upload HTTP/1.1`
-7. Inspect the server's immediate HTTP 200 response:
-   ```json
-   {
-     "status": "success",
-     "upload_id": "UP-88412",
-     "received_from": "Victor Hale",
-     "file": "confidential_exfil_manifest.pdf"
-   }
+8. Right-click the packet $\rightarrow$ **Follow** $\rightarrow$ **TCP Stream**.
+9. Observe the exfiltration headers and JSON manifest payload:
+   ```http
+   POST /upload HTTP/1.1
+   Host: exchange.uninvited.local
+   X-Exfil-Operator: VmljdG9yIEhhbGU=
+   X-Agent-Alias: DragonFly
+   Content-Type: multipart/form-data; boundary=---------------------------39281749281739281749
+
+   -----------------------------39281749281739281749
+   Content-Disposition: form-data; name="operator_token"
+
+   VmljdG9yIEhhbGU=
+   -----------------------------39281749281739281749
+   Content-Disposition: form-data; name="file"; filename="confidential_exfil_manifest.json"
+   Content-Type: application/json
+
+   {"manifest_id":"EXFIL-99201","sender_identity":"VmljdG9yIEhhbGU=","encoding":"base64","alias":"DragonFly","status":"dispatched"}
    ```
-8. The identity of the rogue insider / accomplice is **Victor Hale**.
+10. The operator token `VmljdG9yIEhhbGU=` is Base64 encoded. Decode it:
+    ```bash
+    echo "VmljdG9yIEhhbGU=" | base64 -d
+    ```
+    Output:
+    ```text
+    Victor Hale
+    ```
+11. The true identity of the rogue insider / accomplice is **Victor Hale**.
 
 ### Flag
 - **Standard**: `Victor Hale`

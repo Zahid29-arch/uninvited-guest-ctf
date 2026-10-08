@@ -190,25 +190,22 @@ def create_target_upload_session(base_time):
     ack1.time = t
     packets.append(ack1)
 
-    # 4. HTTP POST /upload by Victor Hale
+    # 4. HTTP POST /upload by accomplice (10.5.5.15)
+    # Identity is encoded with transport Base64 token (VmljdG9yIEhhbGU= -> Victor Hale)
+    # requiring the player to perform actual packet stream inspection rather than a naive strings grep.
     t += 0.005
     boundary = "---------------------------39281749281739281749"
     post_body = (
         f"--{boundary}\r\n"
-        f"Content-Disposition: form-data; name=\"operator\"\r\n\r\n"
-        f"Victor Hale\r\n"
+        f"Content-Disposition: form-data; name=\"operator_token\"\r\n\r\n"
+        f"VmljdG9yIEhhbGU=\r\n"
         f"--{boundary}\r\n"
         f"Content-Disposition: form-data; name=\"destination_agent\"\r\n\r\n"
         f"Adrian Kessler <adrian.kessler@uninvited.local>\r\n"
         f"--{boundary}\r\n"
-        f"Content-Disposition: form-data; name=\"file\"; filename=\"confidential_exfil_manifest.pdf\"\r\n"
-        f"Content-Type: application/pdf\r\n\r\n"
-        f"%PDF-1.5\n"
-        f"%CLASSIFIED TRANSIT ARTIFACT\n"
-        f"Subject: Consignment Transfer Evidence\n"
-        f"Sender: Victor Hale (10.5.5.15)\n"
-        f"Flag: CTF{{VICTOR_HALE_EXFIL_CAPTURED}}\n"
-        f"%%EOF\r\n"
+        f"Content-Disposition: form-data; name=\"file\"; filename=\"confidential_exfil_manifest.json\"\r\n"
+        f"Content-Type: application/json\r\n\r\n"
+        f'{{"manifest_id":"EXFIL-99201","sender_identity":"VmljdG9yIEhhbGU=","encoding":"base64","alias":"DragonFly","status":"dispatched"}}\r\n'
         f"--{boundary}--\r\n"
     ).encode()
 
@@ -216,6 +213,8 @@ def create_target_upload_session(base_time):
         f"POST /upload HTTP/1.1\r\n"
         f"Host: exchange.uninvited.local\r\n"
         f"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\r\n"
+        f"X-Exfil-Operator: VmljdG9yIEhhbGU=\r\n"
+        f"X-Agent-Alias: DragonFly\r\n"
         f"Accept: application/json, text/plain, */*\r\n"
         f"Origin: http://exchange.uninvited.local\r\n"
         f"Referer: http://exchange.uninvited.local/portal\r\n"
@@ -239,7 +238,7 @@ def create_target_upload_session(base_time):
 
     # 6. Server HTTP 200 OK Response
     t += 0.015
-    resp_body = b'{"status":"success","upload_id":"UP-88412","received_from":"Victor Hale","file":"confidential_exfil_manifest.pdf"}'
+    resp_body = b'{"status":"success","upload_id":"UP-88412","received_from_token":"VmljdG9yIEhhbGU=","encoding":"base64","file":"confidential_exfil_manifest.json"}'
     resp_payload = (
         b"HTTP/1.1 200 OK\r\n"
         b"Date: Sun, 27 Sep 2026 15:42:11 GMT\r\n"

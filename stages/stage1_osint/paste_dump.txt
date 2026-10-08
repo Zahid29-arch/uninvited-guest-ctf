@@ -1,1 +1,1 @@
-ID: 4401 | Name: Adrian Kessler | Email: adrian.kessler@uninvited.local | Group: Resellers
+ID: 4401 | Name: Adrian Kessler | Handle: k3ss_void | IdentityToken: YWRyaWFuLmtlc3NsZXJAdW5pbnZpdGVkLmxvY2Fs | Group: SecOps | Policy: {first}.{last}@uninvited.local
