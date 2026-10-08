@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostPaste #4092-uninvited-audit-dump :: Leaked Snippet</title>
+    <style>
+        :root {
+            --bg: #121316;
+            --header-bg: #1a1c22;
+            --code-bg: #0b0c0e;
+            --text: #d4d4d4;
+            --border: #2a2d36;
+            --accent: #ff4757;
+            --highlight: #2ed573;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 24px;
+        }
+        .wrapper { max-width: 980px; margin: 0 auto; }
+        .paste-nav {
+            background: var(--header-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px 8px 0 0;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-family: monospace; font-size: 1.15rem; font-weight: bold; color: var(--accent); }
+        .badge-leaked {
+            background: #ff475722;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .meta-bar {
+            background: #1e2027;
+            border: 1px solid var(--border);
+            border-top: none;
+            padding: 12px 20px;
+            font-size: 0.85rem;
+            color: #8f95a3;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .meta-bar span strong { color: #f1f2f6; }
+        .paste-box {
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        pre {
+            font-family: "JetBrains Mono", Consolas, "Fira Code", monospace;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        .c-comment { color: #6a737d; font-style: italic; }
+        .c-key     { color: #79b8ff; }
+        .c-val     { color: #ffab70; }
+        .c-hl      { color: var(--highlight); font-weight: bold; background: #2ed57315; padding: 1px 4px; border-radius: 3px; }
+        .c-accent  { color: #f97583; }
+        .raw-btn {
+            background: #2f3542;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="paste-nav">
+            <div class="logo">GHOSTPASTE // RAW EXFIL TRACE</div>
+            <div>
+                <span class="badge-leaked">Public Leak</span>
+                <button class="raw-btn" onclick="alert('Raw text preview verified.')">Copy Raw</button>
+            </div>
+        </div>
+
+        <div class="meta-bar">
+            <span>Title: <strong>uninvited_core_deploy_audit_2026.log</strong></span>
+            <span>Uploaded: <strong>2 days ago</strong></span>
+            <span>Syntax: <strong>Config / Syslog</strong></span>
+            <span>Status: <strong>Unindexed / Mirrored</strong></span>
+        </div>
+
+        <div class="paste-box">
+<pre>
+<span class="c-comment"># =========================================================================================</span>
+<span class="c-comment"># UNINVITED INFRASTRUCTURE GROUP - INTERNAL ENVIRONMENT AUDIT &amp; CREDENTIAL PROVISIONING</span>
+<span class="c-comment"># TARGET NETWORK : uninvited_net</span>
+<span class="c-comment"># CLUSTER NODES  : ctfd (8000), juice-shop (3000), exchange-portal (8086)</span>
+<span class="c-comment"># =========================================================================================</span>
+
+<span class="c-key">[DEPLOYMENT_METADATA]</span>
+<span class="c-key">ProjectName</span>    = <span class="c-val">"Uninvited CTF Platform"</span>
+<span class="c-key">AuditScope</span>     = <span class="c-val">"Containerized Perimeter &amp; Service Isolation"</span>
+<span class="c-key">LeadHandle</span>     = <span class="c-hl">k3ss_void</span>
+<span class="c-key">AuditStatus</span>    = <span class="c-val">VERIFIED_STAGING</span>
+
+<span class="c-key">[STAFF_DIRECTORY_CROSS_REFERENCE]</span>
+<span class="c-comment"># Badge ID | Surname       | Public Handle  | Clearance | Assigned Responsibility</span>
+<span class="c-comment"># ---------+---------------+----------------+-----------+-------------------------------------</span>
+<span class="c-comment"># EMP-4011 | Rostova       | el_rost        | Level 2   | AppSec / API Gateway Routing</span>
+<span class="c-comment"># EMP-4024 | Vance         | m_vance        | Level 2   | CI/CD Pipeline &amp; Image Verification</span>
+<span class="c-comment"># EMP-4038 | Jenkins       | s_jenkins      | Level 2   | Database Systems &amp; Backup Sync</span>
+<span class="c-key"># EMP-4401 | </span><span class="c-hl">Kessler</span><span class="c-key">       | </span><span class="c-hl">k3ss_void</span><span class="c-key">      | Level 4   | </span><span class="c-val">Lead Sandbox Admin &amp; Infra Architect</span>
+<span class="c-comment"># EMP-4419 | Dubois        | ghost_d        | Level 1   | Environment Testing &amp; Monitoring</span>
+
+<span class="c-key">[SERVICE_ACCESS_MATRIX]</span>
+<span class="c-comment"># --- Juice Shop (bkimminich/juice-shop) Admin Seeding ---</span>
+<span class="c-key">TargetService</span>  = <span class="c-val">juice-shop</span>
+<span class="c-key">MountConfig</span>    = <span class="c-val">/juice-shop/data/static/users.yml</span>
+<span class="c-key">AdminPrincipal</span> = <span class="c-val">EMP-4401 [Surname: Kessler] &lt;Handle: k3ss_void&gt;</span>
+<span class="c-key">Role</span>           = <span class="c-val">admin</span>
+<span class="c-key">DomainOverride</span> = <span class="c-val">customDomain: true</span>
+<span class="c-key">Status</span>         = <span class="c-val">PROVISIONED</span>
+
+<span class="c-key">[CRYPTOGRAPHIC_AUDIT_TRAIL]</span>
+<span class="c-key">PGP_Key_ID</span>     = <span class="c-val">0x41445249414E-AK</span>
+<span class="c-key">Verified_Sig</span>   = <span class="c-hl">"Building resilient walls for the uninvited."</span>
+<span class="c-key">Commit_Author</span>  = <span class="c-val">k3ss_void (EMP-4401)</span>
+<span class="c-key">Signoff_Hash</span>   = <span class="c-val">e5c9b740a33118f67310df044bb71337</span>
+
+<span class="c-comment"># --- AUDITOR POLICY NOTE ---</span>
+<span class="c-comment"># "All containers in uninvited_net route internal traffic only.</span>
+<span class="c-comment">#  Internal emails follow strict format: {firstname}.{lastname}@uninvited.local</span>
+<span class="c-comment">#  Cross-reference public team profiles with employee roster by Public Handle to resolve full identities.</span>
+<span class="c-comment">#  If administrative credentials for Kessler (k3ss_void) are compromised,</span>
+<span class="c-comment">#  trigger immediate revocation via sec-incident-desk."</span>
+</pre>
+        </div>
+    </div>
+</body>
+</html>

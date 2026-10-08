@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items burpVersion="2026.1.1" exportTime="Sun Sep 27 18:00:00 UTC 2026">
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/lemon_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/lemon_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9sZW1vbl9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGxlbW9uX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/user/whoami</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/user/whoami</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3VzZXIvd2hvYW1pIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=juice</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=juice</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPWp1aWNlIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/banana_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/banana_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9iYW5hbmFfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGJhbmFuYV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=juice</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=juice</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPWp1aWNlIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/BasketItems/1</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/BasketItems/1</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQmFza2V0SXRlbXMvMSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/orange_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/orange_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9vcmFuZ2VfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IG9yYW5nZV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/orange_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/orange_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9vcmFuZ2VfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IG9yYW5nZV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/user/whoami</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/user/whoami</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3VzZXIvd2hvYW1pIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/user/whoami</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/user/whoami</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3VzZXIvd2hvYW1pIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/pomegranate_drink.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/pomegranate_drink.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9wb21lZ3JhbmF0ZV9kcmluay5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHBvbWVncmFuYXRlX2RyaW5rLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/raspberry_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/raspberry_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9yYXNwYmVycnlfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHJhc3BiZXJyeV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Challenges/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Challenges/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQ2hhbGxlbmdlcy8gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/BasketItems/1</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/BasketItems/1</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQmFza2V0SXRlbXMvMSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/lemon_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/lemon_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9sZW1vbl9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGxlbW9uX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Challenges/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Challenges/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQ2hhbGxlbmdlcy8gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/eggfruit_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9lZ2dmcnVpdF9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGVnZ2ZydWl0X2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/green_smoothie.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/green_smoothie.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9ncmVlbl9zbW9vdGhpZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGdyZWVuX3Ntb290aGllLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/quince.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/quince.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9xdWluY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHF1aW5jZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/user/whoami</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/user/whoami</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3VzZXIvd2hvYW1pIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=juice</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=juice</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPWp1aWNlIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Challenges/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Challenges/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQ2hhbGxlbmdlcy8gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/track-order/5267-3392</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/track-order/5267-3392</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3RyYWNrLW9yZGVyLzUyNjctMzM5MiBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/pomegranate_drink.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/pomegranate_drink.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9wb21lZ3JhbmF0ZV9kcmluay5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHBvbWVncmFuYXRlX2RyaW5rLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/orange_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/orange_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9vcmFuZ2VfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IG9yYW5nZV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/green_smoothie.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/green_smoothie.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9ncmVlbl9zbW9vdGhpZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGdyZWVuX3Ntb290aGllLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/banana_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/banana_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9iYW5hbmFfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGJhbmFuYV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/track-order/5267-3392</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/track-order/5267-3392</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3RyYWNrLW9yZGVyLzUyNjctMzM5MiBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=juice</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=juice</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPWp1aWNlIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/BasketItems/1</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/BasketItems/1</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQmFza2V0SXRlbXMvMSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/user/whoami</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/user/whoami</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3VzZXIvd2hvYW1pIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/track-order/5267-3392</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/track-order/5267-3392</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3RyYWNrLW9yZGVyLzUyNjctMzM5MiBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/orange_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/orange_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9vcmFuZ2VfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IG9yYW5nZV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/banana_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/banana_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9iYW5hbmFfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGJhbmFuYV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/raspberry_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/raspberry_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9yYXNwYmVycnlfanVpY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHJhc3BiZXJyeV9qdWljZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/BasketItems/1</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/BasketItems/1</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQmFza2V0SXRlbXMvMSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/captcha/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/captcha/</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2NhcHRjaGEvIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/admin/application-version</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/admin/application-version</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L2FkbWluL2FwcGxpY2F0aW9uLXZlcnNpb24gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/eggfruit_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9lZ2dmcnVpdF9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGVnZ2ZydWl0X2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/sea_buckthorn_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/sea_buckthorn_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9zZWFfYnVja3Rob3JuX2p1aWNlLmpwZyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHNlYV9idWNrdGhvcm5fanVpY2UuanBnXQ==</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/pomegranate_drink.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/pomegranate_drink.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9wb21lZ3JhbmF0ZV9kcmluay5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHBvbWVncmFuYXRlX2RyaW5rLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/eggfruit_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9lZ2dmcnVpdF9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGVnZ2ZydWl0X2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/green_smoothie.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/green_smoothie.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9ncmVlbl9zbW9vdGhpZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGdyZWVuX3Ntb290aGllLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Feedbacks/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Feedbacks/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvRmVlZGJhY2tzLyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/quince.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/quince.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9xdWluY2UuanBnIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHF1aW5jZS5qcGdd</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/track-order/5267-3392</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/track-order/5267-3392</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3RyYWNrLW9yZGVyLzUyNjctMzM5MiBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/sea_buckthorn_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/sea_buckthorn_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9zZWFfYnVja3Rob3JuX2p1aWNlLmpwZyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHNlYV9idWNrdGhvcm5fanVpY2UuanBnXQ==</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/apple_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/apple_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9hcHBsZV9qdWljZS5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IGFwcGxlX2p1aWNlLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/pomegranate_drink.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/pomegranate_drink.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9wb21lZ3JhbmF0ZV9kcmluay5qcGcgSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHBvbWVncmFuYXRlX2RyaW5rLmpwZ10=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/track-order/5267-3392</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/track-order/5267-3392</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3RyYWNrLW9yZGVyLzUyNjctMzM5MiBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/api/Challenges/</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/api/Challenges/</path>
+    <extension/>
+    <request base64="true">R0VUIC9hcGkvQ2hhbGxlbmdlcy8gSFRUUC8xLjENCkhvc3Q6IGxvY2FsaG9zdDozMDAwDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYNCkFjY2VwdDogKi8qDQpSZWZlcmVyOiBodHRwOi8vbG9jYWxob3N0OjMwMDAvDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQo=</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPSBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/rest/products/search?q=juice</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/rest/products/search?q=juice</path>
+    <extension/>
+    <request base64="true">R0VUIC9yZXN0L3Byb2R1Y3RzL3NlYXJjaD9xPWp1aWNlIEhUVFAvMS4xDQpIb3N0OiBsb2NhbGhvc3Q6MzAwMA0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2DQpBY2NlcHQ6ICovKg0KUmVmZXJlcjogaHR0cDovL2xvY2FsaG9zdDozMDAwLw0KQ29ubmVjdGlvbjogY2xvc2UNCg0K</request>
+    <status>200</status>
+    <responselength>142</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbg0KQ29udGVudC1MZW5ndGg6IDQyDQpDb25uZWN0aW9uOiBjbG9zZQ0KDQp7InN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRhIjpbXX0=</response>
+    <comment/>
+  </item>
+  <item>
+    <time>Sun Sep 27 14:00:00 UTC 2026</time>
+    <url>http://localhost:3000/assets/public/images/products/sea_buckthorn_juice.jpg</url>
+    <host ip="127.0.0.1">localhost</host>
+    <port>3000</port>
+    <protocol>http</protocol>
+    <method>GET</method>
+    <path>/assets/public/images/products/sea_buckthorn_juice.jpg</path>
+    <extension>jpg</extension>
+    <request base64="true">R0VUIC9hc3NldHMvcHVibGljL2ltYWdlcy9wcm9kdWN0cy9zZWFfYnVja3Rob3JuX2p1aWNlLmpwZyBIVFRQLzEuMQ0KSG9zdDogbG9jYWxob3N0OjMwMDANClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNg0KQWNjZXB0OiAqLyoNClJlZmVyZXI6IGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC8NCkNvbm5lY3Rpb246IGNsb3NlDQoNCg==</request>
+    <status>200</status>
+    <responselength>12004</responselength>
+    <mimetype>JPEG</mimetype>
+    <response base64="true">SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IEV4cHJlc3MNCkNvbnRlbnQtVHlwZTogaW1hZ2UvanBlZw0KQ29udGVudC1MZW5ndGg6IDEyMDA0DQpDb25uZWN0aW9uOiBjbG9zZQ0KDQpbQklOQVJZIElNQUdFIERBVEE6IHNlYV9idWNrdGhvcm5fanVpY2UuanBnXQ==</response>
+    <comment/>
+  </item>
+</items>

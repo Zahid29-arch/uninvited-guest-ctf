@@ -5,6 +5,9 @@ services:
     image: ctfd/ctfd:latest
     ports:
       - "8000:8000"
+    volumes:
+      - ./platform/ctfd-data/ctfd.db:/opt/CTFd/CTFd/ctfd.db
+      - ./platform/ctfd-data/uploads:/var/uploads
     networks:
       - uninvited_net
     restart: always
