@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 8086;
 // ⚙️ [ADMIN CONFIGURATION] - MANUALLY CHANGE THE PORTAL NAME HERE
 // You can change any of the text values below to customize the portal!
 // =========================================================================
-const PORTAL_NAME        = process.env.PORTAL_NAME        || "THE EXCHANGE";
-const PORTAL_TAGLINE     = process.env.PORTAL_TAGLINE     || "CONSIGNMENT VAULT";
-const PORTAL_BADGE       = process.env.PORTAL_BADGE       || "Darknet Asset Vault";
+const PORTAL_NAME        = process.env.PORTAL_NAME        || "THE DARK EXCHANGE";
+const PORTAL_TAGLINE     = process.env.PORTAL_TAGLINE     || "THE DARK EXCHANGE";
+const PORTAL_BADGE       = process.env.PORTAL_BADGE       || "Treasured Collections";
 const PORTAL_DESCRIPTION = process.env.PORTAL_DESCRIPTION || "Encrypted repository for visual assets, consignment previews, and covert transmissions.";
 // =========================================================================
 

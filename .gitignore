@@ -43,3 +43,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Generated CTF artifacts / solver outputs
+stages/stage5_stego/link.txt
