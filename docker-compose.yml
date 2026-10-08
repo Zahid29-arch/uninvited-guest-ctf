@@ -1,11 +1,15 @@
 services:
   ctfd:
     image: ctfd/ctfd:latest
+    user: root
+    environment:
+      - UPLOAD_FOLDER=/var/uploads
     ports:
       - "8000:8000"
     volumes:
       - ./platform/ctfd-data/ctfd.db:/opt/CTFd/CTFd/ctfd.db
       - ./platform/ctfd-data/uploads:/var/uploads
+      - ./platform/ctfd-data/uploads:/opt/CTFd/CTFd/uploads
     networks:
       - uninvited_net
     restart: always
