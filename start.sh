@@ -5,10 +5,8 @@ echo "=============================================="
 echo " Starting Uninvited Guest CTF Environment"
 echo "=============================================="
 
-# Fix permissions on CTFd database directory for Docker non-root user (UID 1001)
-if [ -d "platform/ctfd-data" ]; then
-    chmod -R 777 platform/ctfd-data 2>/dev/null || true
-fi
+# Fix permissions on all platform and stage assets for non-root containers (CTFd & Juice Shop)
+chmod -R 777 platform stages 2>/dev/null || true
 
 # Start containers via Docker Compose
 docker compose up -d --build

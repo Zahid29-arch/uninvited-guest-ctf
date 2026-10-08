@@ -9,11 +9,11 @@ c.execute("""UPDATE challenges SET description = ? WHERE id = 1""", (
 ))
 
 c.execute("""UPDATE challenges SET description = ? WHERE id = 2""", (
-    "Use the corporate email discovered in Stage 1 to gain access to the administrator account on the OWASP Juice Shop portal at http://localhost:3000. Bypass the authentication mechanism on the login portal. Once logged into the admin dashboard, inspect the user profile section to find the administrator username.",
+    "Use the corporate email discovered in Stage 1 to gain access to the administrator account on the OWASP Juice Shop portal at http://192.168.60.10:3000 (or http://localhost:3000). Bypass the authentication mechanism on the login portal. Once logged into the admin dashboard, inspect the user profile section to find the administrator username.",
 ))
 
 c.execute("""UPDATE challenges SET description = ? WHERE id = 3""", (
-    "As the administrator on OWASP Juice Shop (http://localhost:3000), access the restricted Evidence Vault backup to download the encrypted archive evidence_photos.zip (also attached below). The archive contains confidential case notes and Juice Shop product images. Use the provided wordlist to recover the master passphrase.",
+    "As the administrator on OWASP Juice Shop (http://192.168.60.10:3000 or http://localhost:3000), access the restricted Evidence Vault backup to download the encrypted archive evidence_photos.zip (also attached below). The archive contains confidential case notes and Juice Shop product images. Use the provided wordlist to recover the master passphrase.",
 ))
 
 c.execute("""UPDATE challenges SET description = ? WHERE id = 4""", (
@@ -25,7 +25,7 @@ c.execute("""UPDATE challenges SET description = ? WHERE id = 5""", (
 ))
 
 c.execute("""UPDATE challenges SET description = ? WHERE id = 6""", (
-    "Access The Exchange Portal at http://localhost:8086 using the administrator credentials obtained in earlier stages. Retrieve the forensic network capture upload_capture.pcap. Perform packet inspection to uncover the real identity of the external accomplice operating under the alias 'DragonFly'.",
+    "Access The Exchange Portal at http://192.168.60.10:8086 (or http://localhost:8086) using the administrator credentials obtained in earlier stages. Retrieve the forensic network capture upload_capture.pcap. Perform packet inspection to uncover the real identity of the external accomplice operating under the alias 'DragonFly'.",
 ))
 
 # 2. Delete old flags and insert multi-format flags
