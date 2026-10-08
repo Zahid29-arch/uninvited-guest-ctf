@@ -1,0 +1,21 @@
+# Set default behavior to use LF line endings for Linux compatibility
+* text=auto eol=lf
+
+# Explicit text files
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# Binary files
+*.db binary
+*.zip binary
+*.pcap binary
+*.jpg binary
+*.jpeg binary
+*.png binary

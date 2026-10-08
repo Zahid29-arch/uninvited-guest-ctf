@@ -105,7 +105,9 @@ The environment runs via Docker Compose on an isolated bridge network (`uninvite
 
 3. **Launch the CTF Services**:
    ```bash
-   docker compose up -d
+   chmod +x start.sh stop.sh
+   ./start.sh
+   # Or directly: docker compose up -d
    ```
 
 4. **Identify Ubuntu Server IP Address**:
