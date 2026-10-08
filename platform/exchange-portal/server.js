@@ -6,6 +6,16 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 8086;
 
+// =========================================================================
+// ⚙️ [ADMIN CONFIGURATION] - MANUALLY CHANGE THE PORTAL NAME HERE
+// You can change any of the text values below to customize the portal!
+// =========================================================================
+const PORTAL_NAME        = process.env.PORTAL_NAME        || "THE EXCHANGE";
+const PORTAL_TAGLINE     = process.env.PORTAL_TAGLINE     || "CONSIGNMENT VAULT";
+const PORTAL_BADGE       = process.env.PORTAL_BADGE       || "Darknet Asset Vault";
+const PORTAL_DESCRIPTION = process.env.PORTAL_DESCRIPTION || "Encrypted repository for visual assets, consignment previews, and covert transmissions.";
+// =========================================================================
+
 // Middleware - increase payload limit for base64 image uploads
 app.use(express.urlencoded({ extended: true, limit: '25mb' }));
 app.use(express.json({ limit: '25mb' }));
@@ -58,7 +68,7 @@ function renderLoginPage(req, res) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Exchange :: Secure Gateway</title>
+    <title>${PORTAL_NAME} :: Secure Gateway</title>
     <style>
         :root {
             --bg: #07090e;
@@ -159,9 +169,9 @@ function renderLoginPage(req, res) {
 <body>
     <div class="login-card">
         <div class="header">
-            <div class="badge">Darknet Asset Vault</div>
-            <h1>THE EXCHANGE // PORTAL</h1>
-            <p class="sub">Encrypted repository for visual assets, consignment previews, and covert transmissions.</p>
+            <div class="badge">${PORTAL_BADGE}</div>
+            <h1>${PORTAL_NAME} // ${PORTAL_TAGLINE}</h1>
+            <p class="sub">${PORTAL_DESCRIPTION}</p>
         </div>
         ${errorHtml}
         <form action="/login" method="POST">
@@ -173,7 +183,7 @@ function renderLoginPage(req, res) {
                 <label for="password">Cryptographic Master Key</label>
                 <input type="password" id="password" name="password" placeholder="••••••••••••" required>
             </div>
-            <button type="submit" class="btn-submit">Access Image Vault</button>
+            <button type="submit" class="btn-submit">Access ${PORTAL_NAME}</button>
         </form>
         <div class="footer-note">NODE: EXCH-8086 • UNINVITED CLANDESTINE ROUTING</div>
     </div>
@@ -224,11 +234,8 @@ app.post('/api/upload', (req, res) => {
     }
 
     try {
-        // Sanitize filename to prevent directory traversal
         const baseName = path.basename(filename).replace(/[^a-zA-Z0-9._-]/g, '_');
         const targetPath = path.join(galleryDir, baseName);
-
-        // Strip data:image/...;base64, prefix if present
         const base64Data = data.replace(/^data:image\/\w+;base64,/, '');
         const buffer = Buffer.from(base64Data, 'base64');
 
@@ -275,7 +282,7 @@ app.get('/portal', (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Exchange :: Consignment Vault &amp; Gallery</title>
+    <title>${PORTAL_NAME} :: ${PORTAL_TAGLINE}</title>
     <style>
         :root {
             --bg: #07090e;
@@ -488,7 +495,7 @@ app.get('/portal', (req, res) => {
 <body>
     <div class="container">
         <div class="topbar">
-            <div class="brand">THE EXCHANGE <span>//</span> CONSIGNMENT VAULT</div>
+            <div class="brand">${PORTAL_NAME} <span>//</span> ${PORTAL_TAGLINE}</div>
             <div>
                 <span>Session: <strong class="user-tag">${username}</strong></span>
                 <a href="/logout" class="btn-logout" style="margin-left: 14px;">Sign Out</a>
@@ -497,7 +504,7 @@ app.get('/portal', (req, res) => {
 
         <div class="header-section">
             <div class="header-text">
-                <h2>🖼️ Darknet Image Gallery &amp; Asset Vault</h2>
+                <h2>🖼️ ${PORTAL_NAME} Gallery &amp; Asset Vault</h2>
                 <p>Browse active consignment images or upload new assets directly into the vault.</p>
             </div>
             <div class="upload-box">
