@@ -33,6 +33,8 @@ services:
     build: ./platform/exchange-portal
     ports:
       - "8086:8086"
+    volumes:
+      - ./platform/exchange-portal/public:/app/public
     networks:
       - uninvited_net
     restart: always

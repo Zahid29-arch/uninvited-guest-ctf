@@ -50,9 +50,9 @@ class TestCTFEnvironment(unittest.TestCase):
         self.assertEqual(resp.status_code, 200, 'Exchange Portal is down or returning non-200')
 
     def test_exchange_portal_gallery_asset(self):
-        """Verify Stage 4 / 5 stego image is accessible via static gallery."""
-        resp = requests.get('http://localhost:8086/gallery/consignment_07.jpg', timeout=5)
-        self.assertEqual(resp.status_code, 200, 'Gallery image consignment_07.jpg is missing or inaccessible')
+        """Verify gallery asset is accessible via static gallery."""
+        resp = requests.get('http://localhost:8086/gallery/surveillance_01.jpg', timeout=5)
+        self.assertEqual(resp.status_code, 200, 'Gallery image surveillance_01.jpg is missing or inaccessible')
         self.assertGreater(len(resp.content), 5000, 'Image payload appears truncated')
 
     def test_exchange_portal_authentication_and_pcap(self):
