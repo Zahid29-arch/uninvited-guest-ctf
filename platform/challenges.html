@@ -109,60 +109,53 @@
   {{ Assets.js("assets/js/challenges.js") }}
   <script>
     (function() {
+      var isUpdating = false;
+
       function adjustServiceUrls() {
+        if (isUpdating) return;
         var currentHost = window.location.hostname;
         if (!currentHost) return;
+
         var modal = document.getElementById('challenge-window');
         if (!modal) return;
 
-        // 1. Rewrite any anchor tags pointing to port 3000 or 8086 to match active server IP
-        var links = modal.querySelectorAll('a');
-        links.forEach(function(a) {
-          var href = a.getAttribute('href') || '';
-          if (href.indexOf(':3000') !== -1 || href.indexOf(':8086') !== -1) {
-            var updatedHref = href.replace(/https?:\/\/[^\/:]+(:(?:3000|8086))/gi, 'http://' + currentHost + '$1');
-            a.setAttribute('href', updatedHref);
-            a.setAttribute('target', '_blank');
-            a.setAttribute('rel', 'noopener noreferrer');
-            if (a.textContent.indexOf(':3000') !== -1 || a.textContent.indexOf(':8086') !== -1) {
-              a.textContent = a.textContent.replace(/https?:\/\/[^\/:\s]+(:(?:3000|8086))/gi, 'http://' + currentHost + '$1');
-            }
-          }
-        });
-
-        // 2. Rewrite text nodes in .challenge-desc
-        var descEls = modal.querySelectorAll('.challenge-desc, .challenge-desc p, .challenge-desc span');
-        descEls.forEach(function(el) {
-          Array.from(el.childNodes).forEach(function(node) {
-            if (node.nodeType === Node.TEXT_NODE && node.nodeValue) {
-              if (node.nodeValue.indexOf(':3000') !== -1 || node.nodeValue.indexOf(':8086') !== -1) {
-                node.nodeValue = node.nodeValue.replace(/https?:\/\/[^\/:\s]+(:(?:3000|8086))/gi, 'http://' + currentHost + '$1');
+        isUpdating = true;
+        try {
+          // 1. Rewrite unadjusted anchor tags pointing to port 3000 or 8086
+          var links = modal.querySelectorAll('a:not([data-host-adjusted])');
+          for (var i = 0; i < links.length; i++) {
+            var a = links[i];
+            var href = a.getAttribute('href') || '';
+            if (href.indexOf(':3000') !== -1 || href.indexOf(':8086') !== -1) {
+              a.href = href.replace(/https?:\/\/[^\/:]+(:(?:3000|8086))/gi, 'http://' + currentHost + '$1');
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              if (a.textContent.indexOf(':3000') !== -1 || a.textContent.indexOf(':8086') !== -1) {
+                a.textContent = a.textContent.replace(/https?:\/\/[^\/:\s]+(:(?:3000|8086))/gi, 'http://' + currentHost + '$1');
               }
             }
-          });
-        });
+            a.setAttribute('data-host-adjusted', 'true');
+          }
+        } catch (err) {
+          console.error('[CTF URL Adjust Error]:', err);
+        } finally {
+          isUpdating = false;
+        }
       }
 
-      // Attach observer to rewrite as soon as Alpine.js injects challenge HTML
+      // Safe event bindings: Run only when modal is displayed or challenge clicked
       var modal = document.getElementById('challenge-window');
       if (modal) {
-        var observer = new MutationObserver(function() {
+        modal.addEventListener('shown.bs.modal', function() {
           adjustServiceUrls();
         });
-        observer.observe(modal, { childList: true, subtree: true });
-        modal.addEventListener('shown.bs.modal', adjustServiceUrls);
       }
 
       document.addEventListener('click', function(e) {
-        if (e.target && e.target.closest('.challenge-button')) {
-          setTimeout(adjustServiceUrls, 100);
-          setTimeout(adjustServiceUrls, 300);
-          setTimeout(adjustServiceUrls, 600);
+        if (e.target && (e.target.closest('.challenge-button') || e.target.closest('[data-bs-target="#challenge-window"]'))) {
+          setTimeout(adjustServiceUrls, 250);
         }
       });
-
-      window.addEventListener('load', adjustServiceUrls);
-      document.addEventListener('DOMContentLoaded', adjustServiceUrls);
     })();
   </script>
 {% endblock %}
