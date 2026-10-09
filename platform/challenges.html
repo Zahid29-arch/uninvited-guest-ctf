@@ -1,11 +1,41 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="jumbotron">
+  <!-- Tactical CTF Mission Banner -->
+  <div class="jumbotron ctf-hero py-4 mb-4">
     <div class="container">
-      <h1>
-        {% trans %}Challenges{% endtrans %}
-      </h1>
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          <div class="d-flex align-items-center mb-2">
+            <span class="badge bg-danger text-uppercase tracking-wider me-2 px-2 py-1 shadow-sm">
+              <i class="fas fa-shield-halved me-1"></i> Live Incident Response CTF
+            </span>
+            <span class="badge bg-dark text-info border border-secondary px-2 py-1 font-monospace">
+              SLIIT IE3132 // Year 3 Sem 1
+            </span>
+          </div>
+          <h1 class="display-6 fw-bold text-white mb-1 tracking-wide">
+            🛡️ OPERATION UNINVITED GUEST
+          </h1>
+          <p class="text-muted mb-0 small">
+            6 Sequential Investigation Stages &bull; Incident Case: <code>IR-2026-UNINVITED</code> &bull; Total Points: <span class="text-warning fw-bold">1,150 PTS</span>
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-3 mt-md-0 text-center">
+          <div class="stat-card px-3 py-2 rounded bg-dark border border-secondary shadow-sm">
+            <div class="text-uppercase text-muted" style="font-size: 0.7rem;">Target Profile</div>
+            <div class="h6 text-danger mb-0 fw-bold">Adrian Kessler</div>
+          </div>
+          <div class="stat-card px-3 py-2 rounded bg-dark border border-secondary shadow-sm">
+            <div class="text-uppercase text-muted" style="font-size: 0.7rem;">Progression</div>
+            <div class="h6 text-info mb-0 fw-bold">Sequential 🔒</div>
+          </div>
+          <div class="stat-card px-3 py-2 rounded bg-dark border border-secondary shadow-sm">
+            <div class="text-uppercase text-muted" style="font-size: 0.7rem;">Scoring Engine</div>
+            <div class="h6 text-success mb-0 fw-bold">CTFd Platform</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -29,26 +59,30 @@
       <div x-show="!loaded">
         <div class="min-vh-50 d-flex align-items-center">
           <div class="text-center w-100">
-            <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+            <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner text-info"></i>
+            <p class="text-muted mt-3 font-monospace">Loading Challenge Matrix...</p>
           </div>
         </div>
       </div>
 
       <div x-show="loaded">
         <template x-for="(category, idx) in getCategories()" :key="idx">
-          <div class="pt-5">
+          <div class="pt-4 mb-3">
             <div class="category-header mb-3">
-              <h3 x-text="category"></h3>
+              <h3 class="category-title">
+                <i class="fas fa-folder-open me-2 text-info opacity-75"></i>
+                <span x-text="category"></span>
+              </h3>
             </div>
 
             <div class="category-challenges d-flex flex-column">
-              <div class="challenges-row row">
+              <div class="challenges-row row g-3">
                 <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
-                  <div class="col-sm-6 col-md-4 col-lg-3 my-3">
+                  <div class="col-sm-6 col-md-4 col-lg-4 my-2">
                     <button
-                        class="challenge-button btn w-100 h-100"
+                        class="challenge-button btn w-100 h-100 p-3 text-start"
                         :class="[
-                          c.solved_by_me ? 'challenge-solved btn-dark' : (c.type === 'hidden' ? 'challenge-locked' : 'btn-dark'),
+                          c.solved_by_me ? 'challenge-card challenge-solved' : (c.type === 'hidden' ? 'challenge-card challenge-locked' : 'challenge-card challenge-active'),
                           ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`),
                         ];"
                         :disabled="c.type === 'hidden'"
@@ -56,21 +90,56 @@
                         :value="c.id" 
                         @click="c.type !== 'hidden' && loadChallenge(c.id)"
                     >
-                      <div class="challenge-inner my-3">
-                        <template x-if="c.type === 'hidden'">
-                          <div class="mb-2">
-                            <i class="fas fa-lock fa-2x text-warning"></i>
+                      <div class="challenge-inner d-flex flex-column h-100">
+                        <!-- Top status icon and category badge -->
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <div>
+                            <template x-if="c.solved_by_me">
+                              <i class="fas fa-check-circle fa-2x text-success"></i>
+                            </template>
+                            <template x-if="!c.solved_by_me && c.type === 'hidden'">
+                              <i class="fas fa-lock fa-2x text-warning"></i>
+                            </template>
+                            <template x-if="!c.solved_by_me && c.type !== 'hidden'">
+                              <i class="fas fa-crosshairs fa-2x text-info"></i>
+                            </template>
                           </div>
-                        </template>
-                        <p x-text="c.name" :class="c.type === 'hidden' ? 'text-muted fw-bold' : ''"></p>
-                        <template x-if="c.type === 'hidden'">
-                          <span class="badge bg-dark border border-secondary text-warning">
-                            <i class="fas fa-lock me-1"></i> LOCKED
+                          <div>
+                            <template x-if="c.solved_by_me">
+                              <span class="badge bg-success text-white px-2 py-1">
+                                <i class="fas fa-check me-1"></i> SOLVED
+                              </span>
+                            </template>
+                            <template x-if="!c.solved_by_me && c.type === 'hidden'">
+                              <span class="badge bg-dark border border-warning text-warning px-2 py-1">
+                                <i class="fas fa-lock me-1"></i> LOCKED
+                              </span>
+                            </template>
+                            <template x-if="!c.solved_by_me && c.type !== 'hidden'">
+                              <span class="badge bg-info text-dark px-2 py-1 fw-bold">
+                                ACTIVE
+                              </span>
+                            </template>
+                          </div>
+                        </div>
+
+                        <!-- Challenge Name -->
+                        <h5 class="challenge-title my-2 fw-bold" x-text="c.name" :class="c.type === 'hidden' ? 'text-muted' : (c.solved_by_me ? 'text-success' : 'text-white')"></h5>
+
+                        <!-- Tags Row -->
+                        <div class="challenge-tags d-flex flex-wrap gap-1 my-2">
+                          <template x-for="tag in c.tags" :key="tag.value">
+                            <span class="badge bg-secondary-subtle text-light border border-secondary font-monospace" style="font-size: 0.72rem;" x-text="tag.value"></span>
+                          </template>
+                        </div>
+
+                        <!-- Bottom status / points badge -->
+                        <div class="mt-auto pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                          <small class="text-muted font-monospace" x-text="c.type === 'hidden' ? 'Prerequisite Required' : 'Flag Target'"></small>
+                          <span class="badge rounded-pill" :class="c.solved_by_me ? 'bg-success text-white' : (c.type === 'hidden' ? 'bg-dark text-muted border border-secondary' : 'bg-warning text-dark fw-bold')">
+                            <i class="fas fa-flag me-1"></i><span x-text="c.value"></span> PTS
                           </span>
-                        </template>
-                        <template x-if="c.type !== 'hidden'">
-                          <span x-text="c.value"></span>
-                        </template>
+                        </div>
                       </div>
                     </button>
                   </div>
@@ -84,23 +153,62 @@
   </div>
 
   <style>
+    .ctf-hero {
+      background: linear-gradient(135deg, #0d1117 0%, #161b22 100%) !important;
+      border-bottom: 2px solid #30363d !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .category-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #58a6ff;
+      border-left: 4px solid #58a6ff;
+      padding-left: 10px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .challenge-card {
+      border-radius: 10px !important;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+    .challenge-active {
+      background: linear-gradient(145deg, #161b22, #0d1117) !important;
+      border: 1px solid #00e5ff !important;
+      box-shadow: 0 0 12px rgba(0, 229, 255, 0.15) !important;
+    }
+    .challenge-active:hover {
+      background: #1c2128 !important;
+      border-color: #00ffff !important;
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.35) !important;
+      transform: translateY(-4px) !important;
+    }
+    .challenge-solved {
+      background: linear-gradient(145deg, #0d2818, #07190e) !important;
+      border: 1px solid #00e676 !important;
+      box-shadow: 0 0 12px rgba(0, 230, 118, 0.2) !important;
+    }
+    .challenge-solved:hover {
+      background: #0f331e !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 0 20px rgba(0, 230, 118, 0.35) !important;
+    }
     .challenge-locked {
-      background: linear-gradient(145deg, #212529, #1a1d20) !important;
-      border: 2px dashed #495057 !important;
+      background: linear-gradient(145deg, #161b22, #0d1117) !important;
+      border: 2px dashed #484f58 !important;
       opacity: 0.65 !important;
       cursor: not-allowed !important;
       box-shadow: none !important;
-      transition: all 0.25s ease-in-out;
     }
     .challenge-locked:hover {
-      background: #1a1d20 !important;
+      background: #161b22 !important;
       border-color: #ffc107 !important;
       opacity: 0.8 !important;
       cursor: not-allowed !important;
       transform: none !important;
-    }
-    .challenge-locked p {
-      color: #8c959f !important;
     }
   </style>
 {% endblock %}
