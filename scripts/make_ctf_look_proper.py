@@ -43,9 +43,7 @@ for cid, tag in tags_data:
 print(f"[+] Added {len(tags_data)} tags.")
 
 # 3. Update Home Page (index) to Minimal Cyber Incident Briefing Dossier
-home_html = """
-<div class="container py-4">
-  <!-- Top Hero Header -->
+home_html = """<div class="container py-4">
   <div class="text-center mb-5">
     <div class="d-inline-flex align-items-center mb-3 px-3 py-1 bg-dark border border-secondary rounded-pill">
       <span class="badge bg-danger rounded-pill me-2"><i class="fas fa-radiation me-1"></i> CLASSIFIED</span>
@@ -67,10 +65,7 @@ home_html = """
     </div>
   </div>
 
-  <!-- Minimal Incident Briefing Container -->
   <div class="p-4 rounded border border-secondary bg-dark text-light mb-4" style="background-color: #0d1117 !important; border-color: #30363d !important;">
-    
-    <!-- 1. Mission Overview & Storyline -->
     <div class="row g-4 mb-4 pb-4 border-bottom border-secondary" style="border-color: #21262d !important;">
       <div class="col-lg-6">
         <div class="d-flex align-items-center mb-2">
@@ -95,9 +90,7 @@ home_html = """
       </div>
     </div>
 
-    <!-- 2. Rules & Operational Parameters -->
     <div class="row g-4 mb-4 pb-4 border-bottom border-secondary" style="border-color: #21262d !important;">
-      <!-- Rules of Engagement -->
       <div class="col-lg-7">
         <div class="d-flex align-items-center mb-2">
           <i class="fas fa-shield-alt text-warning me-2"></i>
@@ -111,7 +104,6 @@ home_html = """
         </ul>
       </div>
 
-      <!-- Operational Parameters: Duration & Hints -->
       <div class="col-lg-5">
         <div class="d-flex align-items-center mb-2">
           <i class="fas fa-sliders-h text-primary me-2"></i>
@@ -142,7 +134,6 @@ home_html = """
       </div>
     </div>
 
-    <!-- 3. Flag Submission Template & Format -->
     <div>
       <div class="d-flex align-items-center mb-2">
         <i class="fas fa-flag text-success me-2"></i>
@@ -203,20 +194,17 @@ home_html = """
         </table>
       </div>
     </div>
-
   </div>
 
-  <!-- Minimal Meta Bar -->
   <div class="d-flex flex-wrap justify-content-between align-items-center text-muted small px-3 py-2 border border-secondary rounded font-monospace" style="background-color: #0d1117; border-color: #21262d !important;">
     <div><i class="fas fa-network-wired text-success me-2"></i>Network: <strong>Docker uninvited_net</strong></div>
     <div><i class="fas fa-crosshairs text-warning me-2"></i>Target Hosts: <strong>Juice Shop (:3000) &bull; Exchange (:8086)</strong></div>
     <div><i class="fas fa-microchip text-info me-2"></i>Engine: <strong>CTFd v3.7.0</strong></div>
   </div>
-</div>
-"""
+</div>"""
 
-c.execute("UPDATE pages SET title = 'Operation Uninvited Guest', content = ? WHERE route = 'index'", (home_html,))
-print("[+] Updated Home Page (index) with classified mission dossier.")
+c.execute("UPDATE pages SET title = 'Operation Uninvited Guest', content = ?, format = 'html' WHERE route = 'index'", (home_html,))
+print("[+] Updated Home Page (index) with format='html' and clean minimal layout.")
 
 conn.commit()
 conn.close()
