@@ -1,0 +1,157 @@
+######################################################################
+# SLIIT IE3132 Penetration Testing - CTF Play Box Test Log          #
+# Suite: Operation Uninvited Guest                                   #
+# Run Timestamp: 2026-10-10T00:47:12.381361               #
+######################################################################
+
+======================================================================
+TEST TARGET : Environment Integration Test Suite (7/7)
+COMMAND     : C:\Python314\python.exe tests/test_environment.py
+TIMESTAMP   : 2026-10-10T00:47:12.381835
+DURATION    : 0.432s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+
+STDERR:
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.162s
+
+OK
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 1 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage1_solver.py
+TIMESTAMP   : 2026-10-10T00:47:12.814255
+DURATION    : 0.048s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[+] Identified First Name from team blog: Adrian
+[+] Identified Surname from leaked audit roster: Kessler
+
+[SUCCESS] Stage 1 Solved!
+Target Identity : Adrian Kessler
+Corporate Email : adrian.kessler@uninvited.local
+Flag (Name)     : Adrian Kessler
+Flag (CTF fmt)  : uninvited{adrian_kessler}
+Flag (Email)    : adrian.kessler@uninvited.local
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 2 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage2_solver.py
+TIMESTAMP   : 2026-10-10T00:47:12.863130
+DURATION    : 0.268s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[*] Authenticating to Juice Shop (http://localhost:3000/rest/user/login) via SQL Injection...
+[*] Payload: adrian.kessler@uninvited.local'--
+[+] SQL Injection Bypass Successful!
+[+] Admin JWT Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJkYXRh...
+[+] Authenticated Profile Email: adrian.kessler@uninvited.local
+
+[SUCCESS] Stage 2 Solved!
+Target Username: adrian.kessler
+Flag (Standard): adrian.kessler
+Flag (CTF format): uninvited{adrian.kessler}
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 3 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage3_solver.py
+TIMESTAMP   : 2026-10-10T00:47:13.131887
+DURATION    : 0.286s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[*] Step 1: Testing Juice Shop Administrator Evidence Download...
+    - Unauthenticated request: HTTP 401 (Unauthorized: Authentication required. P...)
+[+] Admin session authenticated! Downloading from Juice Shop...
+[+] Successfully downloaded evidence_photos.zip (177330 bytes) using Admin privilege!
+
+[*] Step 2: Attacking encrypted archive: C:\Users\Zahids_PC\.gemini\antigravity\scratch\ctf-environment\uninvited-guest-ctf\solvers\..\stages\stage3_crypto\evidence_photos.zip
+[*] Wordlist: C:\Users\Zahids_PC\.gemini\antigravity\scratch\ctf-environment\uninvited-guest-ctf\solvers\..\stages\stage3_crypto\wordlist.txt
+[*] Loaded 28 candidate passwords.
+
+[SUCCESS] Stage 3 Solved!
+[+] Decrypted 'flag.txt' successfully.
+Target Password: Kessler123!
+Flag (Standard): Kessler123!
+Flag (CTF format): uninvited{Kessler123!}
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 4 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage4_solver.py
+TIMESTAMP   : 2026-10-10T00:47:13.418531
+DURATION    : 0.069s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[*] Analyzing Burp Proxy log: C:\Users\Zahids_PC\.gemini\antigravity\scratch\ctf-environment\uninvited-guest-ctf\solvers\..\stages\stage4_forensics\proxy_history.xml...
+
+[*] Image Access Distribution:
+    - apple_juice.jpg          : 45 requests
+    - orange_juice.jpg         : 4 requests
+    - pomegranate_drink.jpg    : 4 requests
+    - banana_juice.jpg         : 3 requests
+    - eggfruit_juice.jpg       : 3 requests
+    - green_smoothie.jpg       : 3 requests
+    - sea_buckthorn_juice.jpg  : 3 requests
+    - lemon_juice.jpg          : 2 requests
+    - raspberry_juice.jpg      : 2 requests
+    - quince.jpg               : 2 requests
+
+[SUCCESS] Stage 4 Solved!
+Target Outlier Image: apple_juice.jpg (Accessed 45 times)
+Flag (Standard): apple_juice.jpg
+Flag (CTF format): uninvited{apple_juice.jpg}
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 5 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage5_solver.py
+TIMESTAMP   : 2026-10-10T00:47:13.487588
+DURATION    : 0.618s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[*] Extracting hidden payload from carrier image: C:\Users\Zahids_PC\.gemini\antigravity\scratch\ctf-environment\uninvited-guest-ctf\stages\stage5_stego\apple_juice.jpg...
+[*] Invoking steghide container...
+
+[SUCCESS] Stage 5 Solved!
+Extracted Covert Portal URL: http://localhost:8086
+Flag (Standard): http://localhost:8086
+Flag (CTF format): uninvited{http://localhost:8086}
+======================================================================
+
+======================================================================
+TEST TARGET : Stage 6 Reference Solver
+COMMAND     : C:\Python314\python.exe solvers/stage6_solver.py
+TIMESTAMP   : 2026-10-10T00:47:14.106101
+DURATION    : 0.061s
+EXIT CODE   : 0
+----------------------------------------------------------------------
+STDOUT:
+[*] Parsing PCAP file: C:\Users\Zahids_PC\.gemini\antigravity\scratch\ctf-environment\uninvited-guest-ctf\solvers\..\stages\stage6_pcap\upload_capture.pcap...
+[*] Scapy not installed. Utilizing native PCAP packet stream parser...
+[+] Found Rogue HTTP POST Request via Native Stream Parser!
+[+] Exfiltration Source IP: 10.5.5.15
+[+] Extracted Transport Token: VmljdG9yIEhhbGU=
+[+] Decoded Accomplice Identity: Victor Hale (Alias: DragonFly)
+
+[SUCCESS] Stage 6 Solved!
+Antagonist Name: Victor Hale
+Attacker Host IP: 10.5.5.15
+Flag (Standard): Victor Hale
+Flag (CTF format): uninvited{victor_hale}
+======================================================================
+
+######################################################################
+OVERALL RESULT: ALL TESTS & SOLVERS PASSED (100%)
+COMPLETION TIME: 2026-10-10T00:47:14.168009
+######################################################################

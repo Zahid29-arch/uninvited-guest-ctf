@@ -21,6 +21,8 @@ Following the approved project plan and Assignment 02 specification (Page 4):
 | **Member 3** | **Challenge Design B** *(Stages 4–6)* | • **Stage 4 (Digital Forensics)**: Web proxy log analysis & outlier asset isolation (`apple_juice.jpg`)<br>• **Stage 5 (Steganography)**: Covert carrier image extraction via Steghide (`http://localhost:8086`)<br>• **Stage 6 (Networking / Capstone)**: PCAP inspection, multipart HTTP stream analysis, Base64 deobfuscation (`Victor Hale`) | • `stages/stage4_forensics/`<br>• `stages/stage5_stego/`<br>• `stages/stage6_pcap/`<br>• `platform/exchange-portal/`<br>• `solvers/stage4_solver.py`<br>• `solvers/stage5_solver.py`<br>• `solvers/stage6_solver.py` |
 | **Member 4** | **Integration, Testing & Documentation** | • End-to-end progression & sequential prerequisite enforcement<br>• Automated test suite (`test_environment.py`: 7/7 tests)<br>• Reset and recovery mechanism (`reset.sh`)<br>• Unintended shortcut validation & defect resolution<br>• Record of design changes & technical justifications | • `tests/test_environment.py`<br>• `reset.sh`<br>• `platform/challenges.html`<br>• `README.md`<br>• `WRITEUP.md` |
 
+> 📌 **Deliverable Evidence**: For detailed component ownership mappings, commit history breakdown, and test execution logs, see [EVIDENCE_OF_CONTRIBUTION.md](EVIDENCE_OF_CONTRIBUTION.md).
+
 ---
 
 ## 📖 Storyline & Narrative Progression
