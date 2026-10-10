@@ -114,7 +114,7 @@ home_html = """<div class="container py-4">
         </div>
         <h5 class="text-white fw-bold mb-2">The Insider Threat</h5>
         <p class="text-secondary small mb-0" style="line-height: 1.7;">
-          Intrusion detection systems flagged suspicious data exfiltration originating within the internal network. Digital evidence points to lead infrastructure architect <strong>Adrian Kessler</strong> (alias <code>k3ss_void</code>) abusing privileged credentials to establish clandestine pivot points. Further telemetry reveals Adrian was aided by an external operative, <strong>Victor Hale</strong>. Reconstruct the complete kill chain to uncover the full scope of the breach.
+          Intrusion detection systems flagged suspicious data exfiltration originating within the internal network. Digital evidence points to a rogue infrastructure architect operating under the alias <code>k3ss_void</code> abusing privileged credentials to establish clandestine pivot points. Further telemetry reveals this insider was aided by an external operative coordinating from the shadows. Reconstruct the complete kill chain to uncover the full scope of the breach and identify the perpetrators.
         </p>
       </div>
     </div>

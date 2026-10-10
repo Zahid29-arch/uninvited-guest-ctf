@@ -11,6 +11,7 @@ services:
       - ./platform/ctfd-data/uploads:/var/uploads
       - ./platform/ctfd-data/uploads:/opt/CTFd/CTFd/uploads
       - ./platform/challenges.html:/opt/CTFd/CTFd/themes/core/templates/challenges.html
+      - ./platform/register.html:/opt/CTFd/CTFd/themes/core/templates/register.html
     networks:
       - uninvited_net
     restart: always
