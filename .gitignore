@@ -47,3 +47,4 @@ Thumbs.db
 
 # Generated CTF artifacts / solver outputs
 stages/stage5_stego/link.txt
+*.bundle
