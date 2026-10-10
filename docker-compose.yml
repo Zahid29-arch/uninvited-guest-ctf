@@ -14,6 +14,13 @@ services:
       - ./platform/register.html:/opt/CTFd/CTFd/themes/core/templates/register.html
     networks:
       - uninvited_net
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     restart: always
 
   juice-shop:
@@ -28,6 +35,13 @@ services:
       - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/ftp/evidence_photos.zip
       - ./stages/stage3_crypto/evidence_photos.zip:/juice-shop/frontend/dist/frontend/assets/public/evidence_photos.zip
       - ./platform/juice-shop-index.html:/juice-shop/frontend/dist/frontend/index.html
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     restart: always
 
   exchange-portal:
@@ -38,8 +52,19 @@ services:
       - ./platform/exchange-portal/public:/app/public
     networks:
       - uninvited_net
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     restart: always
 
 networks:
   uninvited_net:
     driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
