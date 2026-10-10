@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operation Uninvited Guest — CTF Demonstration Presentation</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #151d2f;
+      --border: #23314d;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --cyan: #38bdf8;
+      --green: #4ade80;
+      --amber: #fbbf24;
+      --red: #f87171;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .slide-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      height: 650px;
+      background: rgba(21, 29, 47, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 3rem;
+      position: relative;
+      flex-direction: column;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+    .slide.active { display: flex; }
+    .tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      flex: 1;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      flex: 1;
+    }
+    .card {
+      background: rgba(11, 15, 25, 0.8);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card.green .card-title { color: var(--green); }
+    .card.amber .card-title { color: var(--amber); }
+    .card.red .card-title { color: var(--red); }
+    ul {
+      list-style: none;
+      flex: 1;
+    }
+    li {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+      line-height: 1.45;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+    li::before {
+      content: "•";
+      color: var(--cyan);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    .card.green li::before { color: var(--green); }
+    .card.amber li::before { color: var(--amber); }
+    .card.red li::before { color: var(--red); }
+    .footer-nav {
+      height: 60px;
+      background: #080b12;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    .btn {
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid #334155;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .btn:hover { background: var(--cyan); color: #000; }
+    .counter { font-size: 0.9rem; color: var(--text-muted); font-weight: 600; }
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-container">
+
+    <!-- SLIDE 1 -->
+    <div class="slide active">
+      <div class="tag">SLIIT IE3132 — Penetration Testing | Assignment 02</div>
+      <h1 style="font-size: 3rem; margin-top: 2rem; color: var(--cyan);">OPERATION UNINVITED GUEST</h1>
+      <p style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 2rem;">A Multi-Stage Cyber Warfare & Digital Forensics CTF Platform</p>
+      <div class="card" style="max-width: 800px; margin-top: auto; border-color: var(--cyan);">
+        <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Team Role Matrix (15-Minute Allotment):</strong></p>
+        <p style="font-size: 1.05rem; line-height: 1.6;">
+          • <strong>Member 1</strong>: CTF Platform, Network Segmentation & Reset Architecture<br>
+          • <strong>Member 2</strong>: Challenge Design A (Stages 1–3: OSINT, Web SQLi, Crypto)<br>
+          • <strong>Member 3</strong>: Challenge Design B (Stages 4–6: Forensics, Stego, PCAP / Dark Exchange)<br>
+          • <strong>Member 4</strong>: Integration, Automated QA Test Suite & Defect Resolution
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide">
+      <div class="tag">Overview & Rubric Mapping</div>
+      <h1>Presentation Agenda & Role Allocation</h1>
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-title">Member 1 (3.5m)</div>
+          <ul>
+            <li>Hybrid VM / Docker</li>
+            <li>Network Segmentation</li>
+            <li>Port Exposure (:8000, :3000, :8086)</li>
+            <li>CTFd Scoring & Hints</li>
+            <li>5-Second reset.sh</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Member 2 (3.75m)</div>
+          <ul>
+            <li>Challenge Design A</li>
+            <li>Stage 1: OSINT Correlation</li>
+            <li>Stage 2: Juice Shop SQLi</li>
+            <li>Stage 3: Evidence Zip Crack</li>
+            <li>Solvers 1, 2, and 3</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <div class="card-title">Member 3 (3.75m)</div>
+          <ul>
+            <li>Challenge Design B</li>
+            <li>Stage 4: Proxy Log Outlier</li>
+            <li>Stage 5: Steghide DCT Link</li>
+            <li>Stage 6: The Dark Exchange</li>
+            <li>Solvers 4, 5, and 6</li>
+          </ul>
+        </div>
+        <div class="card red">
+          <div class="card-title">Member 4 (3.0m)</div>
+          <ul>
+            <li>End-to-End Progression</li>
+            <li>Master Test Suite (7 Tests)</li>
+            <li>100% Verified Pass Rate</li>
+            <li>Defects Solved (404s, Loops)</li>
+            <li>Assignment 01 Changes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide">
+      <div class="tag">Member 1: Platform & Architecture</div>
+      <h1>Deployment Model & Network Segmentation</h1>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Hybrid Container Topology</div>
+          <ul>
+            <li><strong>Host OS:</strong> Ubuntu Server 22.04 LTS VM on VirtualBox.</li>
+            <li><strong>Containerized Services:</strong>
+              <br>• <code>ctfd</code> (:8000) — Scoring & tactical HUD
+              <br>• <code>juice-shop</code> (:3000) — Vulnerable e-commerce portal
+              <br>• <code>exchange-portal</code> (:8086) — Contraband ledger
+            </li>
+            <li><strong>Zero-Touch Deployment:</strong> Single command <code>./start.sh</code> initializes the stack in &lt; 45 seconds.</li>
+            <li><strong>Architecture Fidelity:</strong> 100% aligned with approved proposal diagram.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Network Isolation & Security Controls</div>
+          <ul>
+            <li><strong>Isolated Bridge:</strong> <code>uninvited_net</code> isolates container-to-container communication.</li>
+            <li><strong>Subnet:</strong> Players attack from Kali on Host-Only <code>192.168.60.0/24</code> (Target: <code>192.168.60.10</code>).</li>
+            <li><strong>Strict Ports:</strong> Only ports 8000, 3000, 8086, and 22 are accessible.</li>
+            <li><strong>Integrity Protections:</strong> Core application volumes mounted with <code>:ro</code> (read-only) flags to prevent container tampering.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="slide">
+      <div class="tag">Member 1: Platform & Architecture</div>
+      <h1>Scoring Rules, Tactical HUD & State Reset</h1>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">CTFd Configuration & Tactical HUD</div>
+          <ul>
+            <li><strong>Flag Validation:</strong> Supports wrapped <code>uninvited{...}</code> and raw values.</li>
+            <li><strong>Dynamic Locking:</strong> Sequential stage unlocks on previous flag solve.</li>
+            <li><strong>Hint Cost Scheme:</strong>
+              <br>• Hint 1 penalty: <strong>-10 points</strong>
+              <br>• Subsequent hints: <strong>-20 points</strong>
+            </li>
+            <li><strong>Tactical Cyber HUD:</strong> Custom dark theme with live stage tags, clean briefing, and dynamic IP resolution.</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Deterministic Reset: reset.sh</div>
+          <ul>
+            <li><strong>Rapid Execution:</strong> <code>./reset.sh</code> flushes transient state in &lt; 5 seconds.</li>
+            <li><strong>Automated Scope:</strong>
+              <br>• Cleans player solves, hints, submissions, and session cache.
+              <br>• Preserves baseline admin accounts and seeded challenges.
+            </li>
+            <li><strong>Resource Footprint:</strong> Entire stack operates efficiently under 2 GB RAM.</li>
+            <li><strong>Verification:</strong> Solvers pass 100% after every reset.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 -->
+    <div class="slide">
+      <div class="tag">Member 2: Challenge Design A</div>
+      <h1>Stage 1: OSINT — Unmasking the Target</h1>
+      <div class="grid-2">
+        <div class="card green">
+          <div class="card-title">Artifacts & Construction</div>
+          <ul>
+            <li><strong>Multi-Source Scenario:</strong> Digital breadcrumbs split across realistic web documents.</li>
+            <li><strong>Artifacts:</strong>
+              <br>• <code>blog_about.html</code>: Company engineering blog
+              <br>• <code>leaked_paste.html</code>: Internal staff pastebin dump
+              <br>• <code>forum_profile.html</code>: Underground forum profile
+            </li>
+            <li><strong>Fairness:</strong> No spoilers or artificial highlights.</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Walkthrough & Flag</div>
+          <ul>
+            <li><strong>Analysis:</strong>
+              <br>1. Blog gives lead architect: <strong>Adrian</strong> (handle <code>k3ss_void</code>).
+              <br>2. Policy rule: <code>{first}.{last}@uninvited.local</code>.
+              <br>3. Leaked paste matches <code>k3ss_void</code> to surname <strong>Kessler</strong>.
+            </li>
+            <li><strong>Target Identity:</strong> <code>adrian.kessler@uninvited.local</code></li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{adrian_kessler}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage1_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6 -->
+    <div class="slide">
+      <div class="tag">Member 2: Challenge Design A</div>
+      <h1>Stage 2: Web Security — Front Door (Juice Shop)</h1>
+      <div class="grid-2">
+        <div class="card green">
+          <div class="card-title">Target & Vulnerability</div>
+          <ul>
+            <li><strong>Service:</strong> OWASP Juice Shop on port 3000.</li>
+            <li><strong>Account Injection:</strong> <code>users.yml</code> mounts target admin account:
+              <br>• Email: <code>adrian.kessler@uninvited.local</code>
+              <br>• Role: <code>admin</code>
+            </li>
+            <li><strong>Vulnerability:</strong> SQL Injection in Email login field (SQLite backend).</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Exploit & Flag</div>
+          <ul>
+            <li><strong>Payload:</strong> <code>adrian.kessler@uninvited.local'--</code> in Email field.</li>
+            <li><strong>Execution:</strong> Enter any dummy password. SQL comments out password verification.</li>
+            <li><strong>Result:</strong> Authenticated as Administrator. User profile badge reveals: <code>adrian.kessler</code>.</li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{adrian.kessler}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage2_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7 -->
+    <div class="slide">
+      <div class="tag">Member 2: Challenge Design A</div>
+      <h1>Stage 3: Cryptography — Evidence Vault Cracking</h1>
+      <div class="grid-2">
+        <div class="card green">
+          <div class="card-title">Packaging & Access Control</div>
+          <ul>
+            <li><strong>Artifact:</strong> <code>evidence_photos.zip</code> generated via <code>build_evidence_zip.py</code>.</li>
+            <li><strong>Endpoint:</strong> <code>/rest/admin/evidence_photos.zip</code> (Juice Shop).</li>
+            <li><strong>Access Control:</strong> Requires Stage 2 admin session (returns HTTP 401 unauthenticated).</li>
+            <li><strong>Contents:</strong> 10 authentic Juice Shop product images + case notes.</li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Cracking & Flag</div>
+          <ul>
+            <li><strong>Attack:</strong> Dictionary attack using provided <code>wordlist.txt</code>.</li>
+            <li><strong>Tools:</strong> <code>fcrackzip -u -D -p wordlist.txt evidence_photos.zip</code> or <code>zip2john</code>.</li>
+            <li><strong>Cracked Password:</strong> <code>Kessler123!</code> in &lt; 2 seconds.</li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{Kessler123!}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage3_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8 -->
+    <div class="slide">
+      <div class="tag">Member 3: Challenge Design B</div>
+      <h1>Stage 4: Digital Forensics — Follow the Clicks</h1>
+      <div class="grid-2">
+        <div class="card amber">
+          <div class="card-title">Log Synthesis</div>
+          <ul>
+            <li><strong>Artifact:</strong> 114 KB Burp Suite XML proxy log (<code>proxy_history.xml</code>).</li>
+            <li><strong>Synthesis Script:</strong> <code>generate_proxy_log.py</code>.</li>
+            <li><strong>Realism:</strong> 80+ realistic HTTP requests with full headers simulating normal and malicious activity.</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <div class="card-title">Frequency Analysis & Flag</div>
+          <ul>
+            <li><strong>Analysis:</strong> Count requests for product images under <code>/assets/public/images/products/</code>.</li>
+            <li><strong>Findings:</strong>
+              <br>• Normal images: 2 to 4 requests
+              <br>• <strong>apple_juice.jpg: 45 requests (EXTREME OUTLIER)</strong>
+            </li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{apple_juice.jpg}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage4_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9 -->
+    <div class="slide">
+      <div class="tag">Member 3: Challenge Design B</div>
+      <h1>Stage 5: Steganography — Hidden in Plain Sight</h1>
+      <div class="grid-2">
+        <div class="card amber">
+          <div class="card-title">Stego Carrier & Encoding</div>
+          <ul>
+            <li><strong>Carrier:</strong> <code>apple_juice.jpg</code> (from Stage 3 zip).</li>
+            <li><strong>Encoding Script:</strong> <code>embed_stego.py</code>.</li>
+            <li><strong>Algorithm:</strong> Steghide DCT coefficient steganography. Zero visual artifacting.</li>
+            <li><strong>Passphrase:</strong> Empty string (<code>""</code>).</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <div class="card-title">Extraction & Flag</div>
+          <ul>
+            <li><strong>Command:</strong> <code>steghide extract -sf apple_juice.jpg -p ""</code></li>
+            <li><strong>Extracted File:</strong> <code>link.txt</code></li>
+            <li><strong>Recovered Endpoint:</strong> <code>http://localhost:8086</code> (The Dark Exchange portal).</li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{http://localhost:8086}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage5_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 10 -->
+    <div class="slide">
+      <div class="tag">Member 3: Challenge Design B</div>
+      <h1>Stage 6: Networking — The Dark Exchange & PCAP</h1>
+      <div class="grid-2">
+        <div class="card amber">
+          <div class="card-title">Dark Exchange & Network Trace</div>
+          <ul>
+            <li><strong>Custom App:</strong> Node.js/Express contraband ledger on port 8086.</li>
+            <li><strong>Login:</strong> Uses Adrian's credentials from Stages 1 & 3 (<code>Kessler123!</code>).</li>
+            <li><strong>PCAP Generation:</strong> <code>generate_pcap.py</code> (Scapy) creates realistic 25 KB capture with handshakes.</li>
+          </ul>
+        </div>
+        <div class="card amber">
+          <div class="card-title">Packet Inspection & Accomplice Flag</div>
+          <ul>
+            <li><strong>Wireshark Filter:</strong> <code>http.request.method == "POST"</code></li>
+            <li><strong>Stream:</strong> TCP stream to <code>/upload</code> contains exfil header:
+              <br><code>X-Exfil-Operator: VmljdG9yIEhhbGU=</code>
+            </li>
+            <li><strong>Decode:</strong> <code>echo "VmljdG9yIEhhbGU=" | base64 -d</code> &rarr; <strong>Victor Hale</strong></li>
+            <li><strong>Flag:</strong> <span class="pill">uninvited{victor_hale}</span></li>
+            <li><strong>Solver:</strong> <code>solvers/stage6_solver.py</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 11 -->
+    <div class="slide">
+      <div class="tag">Member 4: Integration & QA</div>
+      <h1>Continuous Forensic Storyline Progression</h1>
+      <div class="card" style="border-color: var(--cyan); flex: 1;">
+        <div class="card-title">Interlocking Forensic Dependencies</div>
+        <ul style="line-height: 1.8;">
+          <li><strong>STAGE 1 (OSINT)</strong> &rarr; Recovers target email: <code>adrian.kessler@uninvited.local</code></li>
+          <li style="color: var(--cyan);">↳ <em>Required to construct the Stage 2 SQLi payload</em></li>
+          <li><strong>STAGE 2 (Web SQLi)</strong> &rarr; Authenticates as Administrator on Juice Shop</li>
+          <li style="color: var(--cyan);">↳ <em>Required to download the restricted Stage 3 evidence archive</em></li>
+          <li><strong>STAGE 3 (Crypto)</strong> &rarr; Cracks <code>evidence_photos.zip</code> &rarr; Password <code>Kessler123!</code> + 10 product images</li>
+          <li style="color: var(--cyan);">↳ <em>Yields password for Stage 6 + evidence photos for Stages 4 & 5</em></li>
+          <li><strong>STAGE 4 (Forensics)</strong> &rarr; Frequency analysis identifies outlier: <code>apple_juice.jpg</code></li>
+          <li style="color: var(--cyan);">↳ <em>Pinpoints exact carrier image for Stage 5 steganography</em></li>
+          <li><strong>STAGE 5 (Stego)</strong> &rarr; Extracts covert link <code>http://localhost:8086</code> from <code>apple_juice.jpg</code></li>
+          <li style="color: var(--cyan);">↳ <em>Provides URL; combined with Stage 3 password, unlocks Stage 6</em></li>
+          <li><strong>STAGE 6 (Networking)</strong> &rarr; PCAP analysis unmasks rogue accomplice: <strong>Victor Hale</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SLIDE 12 -->
+    <div class="slide">
+      <div class="tag">Member 4: Integration & QA</div>
+      <h1>Automated Test Suite & Defect Resolution</h1>
+      <div class="grid-2">
+        <div class="card red">
+          <div class="card-title">Master Test Harness: run_all_tests.py</div>
+          <ul>
+            <li><strong>7 Unit Tests:</strong> Checks port availability, HTTP status, SQLi bypass, JWT validity, and zip integrity.</li>
+            <li><strong>6 Solvers:</strong> Executes all reference exploit scripts sequentially.</li>
+            <li><strong>Results:</strong> <strong>100% Passed (13/13 Checks)</strong> in 4.5 seconds.</li>
+            <li><strong>Audit Log:</strong> Recorded in <code>tests/test_execution.log</code>.</li>
+          </ul>
+        </div>
+        <div class="card red">
+          <div class="card-title">Defects Identified & Solved</div>
+          <ul>
+            <li><strong>1. MutationObserver Freeze:</strong> Infinite recursive DOM trigger in CTFd fixed by disconnecting observer during mutations.</li>
+            <li><strong>2. Upload 404 Errors:</strong> Corrected upload mount directory and root container execution in <code>docker-compose.yml</code>.</li>
+            <li><strong>3. Fair Play / Spoilers:</strong> Removed all visual highlights from Stage 1 files and spoiler names from home briefing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 13 -->
+    <div class="slide">
+      <div class="tag">Member 4: Integration & QA</div>
+      <h1>Design Changes from Assignment 01</h1>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">A01 Proposal vs Built</div>
+          <ul>
+            <li><strong>A01:</strong> Loose scripts and manual setup.
+              <br><strong>Built:</strong> Fully automated Docker Compose stack.
+            </li>
+            <li><strong>A01:</strong> Default basic CTFd interface.
+              <br><strong>Built:</strong> Cyber Tactical HUD with dynamic IP discovery.
+            </li>
+            <li><strong>A01:</strong> Static PCAP download.
+              <br><strong>Built:</strong> Custom authenticated Dark Exchange web portal (:8086).
+            </li>
+          </ul>
+        </div>
+        <div class="card green">
+          <div class="card-title">Engineering Justification</div>
+          <ul>
+            <li><strong>Realism:</strong> Emulates actual adversary infrastructure.</li>
+            <li><strong>Isolation:</strong> Docker eliminates dependency collisions.</li>
+            <li><strong>Cross-Platform:</strong> Works on Kali, Ubuntu, macOS, Windows.</li>
+            <li><strong>Resilience:</strong> Automated <code>reset.sh</code> restores state in 5 seconds.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 14 -->
+    <div class="slide">
+      <div class="tag">Conclusion & Deliverables</div>
+      <h1>Operation Uninvited Guest — Complete Deliverables</h1>
+      <div class="card" style="border-color: var(--cyan); flex: 1;">
+        <div class="card-title">Deliverables Checklist & Flag Summary</div>
+        <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+          ✔ <strong>Play Box:</strong> Ubuntu VM + Docker Compose + <code>start.sh</code> + <code>reset.sh</code><br>
+          ✔ <strong>Source Code:</strong> Complete exploit solvers (1–6) & synthesis generators in repository<br>
+          ✔ <strong>Contribution Evidence:</strong> Detailed breakdown in <code>EVIDENCE_OF_CONTRIBUTION.md</code><br>
+          ✔ <strong>Test Logs:</strong> 100% verified test logs in <code>tests/test_execution.log</code>
+        </p>
+        <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.9rem; color: var(--green);">
+          Stage 1: uninvited{adrian_kessler}  | Stage 2: uninvited{adrian.kessler}<br>
+          Stage 3: uninvited{Kessler123!}   | Stage 4: uninvited{apple_juice.jpg}<br>
+          Stage 5: uninvited{http://localhost:8086} | Stage 6: uninvited{victor_hale}
+        </div>
+        <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 1.1rem; text-align: center;">
+          Repository: <strong>https://github.com/Zahid29-arch/uninvited-guest-ctf</strong><br>
+          <em>Thank you! We now welcome any questions from the evaluators.</em>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="footer-nav">
+    <button class="btn" id="prevBtn" onclick="prevSlide()">◀ Previous</button>
+    <div class="counter" id="counter">Slide 1 of 14</div>
+    <button class="btn" id="nextBtn" onclick="nextSlide()">Next ▶</button>
+  </div>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+
+    function updateSlide() {
+      slides.forEach((s, i) => s.classList.toggle('active', i === current));
+      counter.innerText = `Slide ${current + 1} of ${slides.length}`;
+    }
+
+    function nextSlide() {
+      if (current < slides.length - 1) { current++; updateSlide(); }
+    }
+
+    function prevSlide() {
+      if (current > 0) { current--; updateSlide(); }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
