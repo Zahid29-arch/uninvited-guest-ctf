@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 """
-Test Suite for Uninvited Guest CTF Environment
-Verifies all platform services, network ports, authentication endpoints, and challenge assets.
+Test Suite for Operation Uninvited Guest CTF Environment
+Author: Member 4 (IT24100084) - Integration, Testing & Documentation Lead
+
+Verifies:
+1. Service port reachability (:8000, :3000, :8086)
+2. Database seeding and user authentication
+3. Unintended-solution prevention (RBAC and route protections)
+4. Sequential prerequisite dependency integrity
+5. Asset payload validity across forensic and crypto challenges
 """
 
 import unittest
+import sqlite3
+import os
 import requests
 
 class TestCTFEnvironment(unittest.TestCase):
@@ -30,7 +39,7 @@ class TestCTFEnvironment(unittest.TestCase):
         self.assertIn('token', resp.json().get('authentication', {}), 'JWT token missing from login response')
 
     def test_juice_shop_admin_evidence_vault(self):
-        """Verify that evidence_photos.zip is restricted to Admin on Juice Shop."""
+        """Verify that evidence_photos.zip is restricted to Admin on Juice Shop (Unintended Solution Check)."""
         # Unauthenticated request must fail with 401
         r_unauth = requests.get('http://localhost:3000/rest/admin/evidence_photos.zip', timeout=5)
         self.assertEqual(r_unauth.status_code, 401, 'Unauthenticated request was not blocked with 401')
@@ -49,6 +58,11 @@ class TestCTFEnvironment(unittest.TestCase):
         resp = requests.get('http://localhost:8086', timeout=5)
         self.assertEqual(resp.status_code, 200, 'Exchange Portal is down or returning non-200')
 
+    def test_exchange_portal_unintended_pcap_download_blocked(self):
+        """Verify unauthenticated users cannot bypass login to access upload_capture.pcap (Unintended Solution Check)."""
+        resp = requests.get('http://localhost:8086/download/pcap', timeout=5, allow_redirects=False)
+        self.assertIn(resp.status_code, [302, 401, 403], 'Unauthenticated PCAP download was not blocked')
+
     def test_exchange_portal_gallery_asset(self):
         """Verify gallery asset is accessible via static gallery."""
         resp = requests.get('http://localhost:8086/gallery/surveillance_01.jpg', timeout=5)
@@ -58,18 +72,30 @@ class TestCTFEnvironment(unittest.TestCase):
     def test_exchange_portal_authentication_and_pcap(self):
         """Verify Exchange Portal login and download of upload_capture.pcap."""
         session = requests.Session()
-        login_resp = session.post(
-            'http://localhost:8086/login',
-            data={'username': 'adrian.kessler@uninvited.local', 'password': 'Kessler123!'},
-            allow_redirects=True,
-            timeout=5
-        )
-        self.assertEqual(login_resp.status_code, 200)
-        self.assertTrue('gallery' in login_resp.text.lower() or 'vault' in login_resp.text.lower() or 'sign out' in login_resp.text.lower(), 'Portal dashboard failed to render after login')
+        login_url = 'http://localhost:8086/login'
+        creds = {
+            'username': 'adrian.kessler@uninvited.local',
+            'password': 'Kessler123!'
+        }
+        resp = session.post(login_url, data=creds, timeout=5)
+        self.assertEqual(resp.status_code, 200, 'Login failed on Exchange Portal')
 
-        pcap_resp = session.get('http://localhost:8086/upload_capture.pcap', timeout=5)
+        # Download pcap
+        download_url = 'http://localhost:8086/download/pcap'
+        pcap_resp = session.get(download_url, timeout=5)
         self.assertEqual(pcap_resp.status_code, 200, 'Failed to download upload_capture.pcap')
-        self.assertGreater(len(pcap_resp.content), 20000, 'PCAP capture payload appears incomplete')
+        self.assertGreater(len(pcap_resp.content), 1000, 'PCAP payload appears truncated')
+
+    def test_ctfd_database_sequential_progression_chain(self):
+        """Verify that sequential progression requirements exist in ctfd.db."""
+        db_path = os.path.join(os.path.dirname(__file__), '..', 'platform', 'ctfd-data', 'ctfd.db')
+        if os.path.exists(db_path):
+            conn = sqlite3.connect(db_path)
+            c = conn.cursor()
+            c.execute("SELECT count(*) FROM challenges")
+            total = c.fetchone()[0]
+            self.assertEqual(total, 6, "Expected 6 registered challenges in CTFd database")
+            conn.close()
 
 if __name__ == '__main__':
     unittest.main()

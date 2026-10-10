@@ -7,6 +7,7 @@ DB_PATH="$DIR/platform/ctfd-data/ctfd.db"
 function banner() {
     echo "=========================================================="
     echo "  🛡️  Operation Uninvited Guest — CTF Reset Manager"
+    echo "  👤 Integration, Testing & Recovery: IT24100084 (Member 4)"
     echo "=========================================================="
 }
 
