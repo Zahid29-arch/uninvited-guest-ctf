@@ -1,14 +1,14 @@
 ######################################################################
 # SLIIT IE3132 Penetration Testing - CTF Play Box Test Log          #
 # Suite: Operation Uninvited Guest                                   #
-# Run Timestamp: 2026-10-10T10:34:06.067579               #
+# Run Timestamp: 2026-10-10T10:45:57.475017               #
 ######################################################################
 
 ======================================================================
 TEST TARGET : Environment Integration Test Suite (7/7)
 COMMAND     : C:\Python314\python.exe tests/test_environment.py
-TIMESTAMP   : 2026-10-10T10:34:06.068132
-DURATION    : 1.224s
+TIMESTAMP   : 2026-10-10T10:45:57.475801
+DURATION    : 1.000s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -16,7 +16,7 @@ STDOUT:
 STDERR:
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.569s
+Ran 7 tests in 0.558s
 
 OK
 ======================================================================
@@ -24,8 +24,8 @@ OK
 ======================================================================
 TEST TARGET : Stage 1 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage1_solver.py
-TIMESTAMP   : 2026-10-10T10:34:07.293636
-DURATION    : 0.111s
+TIMESTAMP   : 2026-10-10T10:45:58.477040
+DURATION    : 0.094s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -43,8 +43,8 @@ Flag (Email)    : adrian.kessler@uninvited.local
 ======================================================================
 TEST TARGET : Stage 2 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage2_solver.py
-TIMESTAMP   : 2026-10-10T10:34:07.404849
-DURATION    : 0.550s
+TIMESTAMP   : 2026-10-10T10:45:58.572010
+DURATION    : 0.409s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -63,8 +63,8 @@ Flag (CTF format): uninvited{adrian.kessler}
 ======================================================================
 TEST TARGET : Stage 3 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage3_solver.py
-TIMESTAMP   : 2026-10-10T10:34:07.955920
-DURATION    : 0.681s
+TIMESTAMP   : 2026-10-10T10:45:58.981239
+DURATION    : 0.491s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -87,8 +87,8 @@ Flag (CTF format): uninvited{Kessler123!}
 ======================================================================
 TEST TARGET : Stage 4 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage4_solver.py
-TIMESTAMP   : 2026-10-10T10:34:08.638409
-DURATION    : 0.577s
+TIMESTAMP   : 2026-10-10T10:45:59.472506
+DURATION    : 0.137s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -115,8 +115,8 @@ Flag (CTF format): uninvited{apple_juice.jpg}
 ======================================================================
 TEST TARGET : Stage 5 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage5_solver.py
-TIMESTAMP   : 2026-10-10T10:34:09.216289
-DURATION    : 1.064s
+TIMESTAMP   : 2026-10-10T10:45:59.610162
+DURATION    : 0.993s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -132,8 +132,8 @@ Flag (CTF format): uninvited{http://localhost:8086}
 ======================================================================
 TEST TARGET : Stage 6 Reference Solver
 COMMAND     : C:\Python314\python.exe solvers/stage6_solver.py
-TIMESTAMP   : 2026-10-10T10:34:10.282067
-DURATION    : 0.131s
+TIMESTAMP   : 2026-10-10T10:46:00.604145
+DURATION    : 0.076s
 EXIT CODE   : 0
 ----------------------------------------------------------------------
 STDOUT:
@@ -153,5 +153,5 @@ Flag (CTF format): uninvited{victor_hale}
 
 ######################################################################
 OVERALL RESULT: ALL TESTS & SOLVERS PASSED (100%)
-COMPLETION TIME: 2026-10-10T10:34:10.413576
+COMPLETION TIME: 2026-10-10T10:46:00.680503
 ######################################################################
